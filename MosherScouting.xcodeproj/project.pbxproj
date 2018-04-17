@@ -20,7 +20,20 @@
 		AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
+		AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA864C20868658007D85EB /* PlayerManagerTests.swift */; };
+		AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
+		AFCA8657208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFCA864F20868658007D85EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF35A6C02073EA8600402716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF35A6C72073EA8600402716;
+			remoteInfo = MosherScouting;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF01FBD92081741F00BD65C3 /* players.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = players.plist; sourceTree = "<group>"; };
@@ -39,10 +52,21 @@
 		AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AFCA864A20868658007D85EB /* MosherScoutingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosherScoutingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCA864C20868658007D85EB /* PlayerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManagerTests.swift; sourceTree = "<group>"; };
+		AFCA864E20868658007D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCA8655208686B7007D85EB /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF35A6C52073EA8600402716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA864720868658007D85EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				AF35A6CA2073EA8600402716 /* MosherScouting */,
+				AFCA864B20868658007D85EB /* MosherScoutingTests */,
 				AF35A6C92073EA8600402716 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AF35A6C82073EA8600402716 /* MosherScouting.app */,
+				AFCA864A20868658007D85EB /* MosherScoutingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +108,7 @@
 		AF35A6CA2073EA8600402716 /* MosherScouting */ = {
 			isa = PBXGroup;
 			children = (
+				AFCA86542086866B007D85EB /* Networking */,
 				AF041D2C20854A5F0071A767 /* FoldingCell */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
 				AF041D28208549E30071A767 /* DemoCell.swift */,
@@ -97,6 +124,23 @@
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 			);
 			path = MosherScouting;
+			sourceTree = "<group>";
+		};
+		AFCA864B20868658007D85EB /* MosherScoutingTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA864C20868658007D85EB /* PlayerManagerTests.swift */,
+				AFCA864E20868658007D85EB /* Info.plist */,
+			);
+			path = MosherScoutingTests;
+			sourceTree = "<group>";
+		};
+		AFCA86542086866B007D85EB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA8655208686B7007D85EB /* PlayerManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,19 +163,42 @@
 			productReference = AF35A6C82073EA8600402716 /* MosherScouting.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AFCA864920868658007D85EB /* MosherScoutingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCA865120868658007D85EB /* Build configuration list for PBXNativeTarget "MosherScoutingTests" */;
+			buildPhases = (
+				AFCA864620868658007D85EB /* Sources */,
+				AFCA864720868658007D85EB /* Frameworks */,
+				AFCA864820868658007D85EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCA865020868658007D85EB /* PBXTargetDependency */,
+			);
+			name = MosherScoutingTests;
+			productName = MosherScoutingTests;
+			productReference = AFCA864A20868658007D85EB /* MosherScoutingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AF35A6C02073EA8600402716 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Gambrell, John";
 				TargetAttributes = {
 					AF35A6C72073EA8600402716 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					AFCA864920868658007D85EB = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF35A6C72073EA8600402716;
 					};
 				};
 			};
@@ -149,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				AF35A6C72073EA8600402716 /* MosherScouting */,
+				AFCA864920868658007D85EB /* MosherScoutingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +236,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFCA864820868658007D85EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -178,13 +253,31 @@
 				AF041D222085483D0071A767 /* MainTableViewController.swift in Sources */,
 				AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */,
 				AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */,
+				AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */,
 				AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */,
 				AF041D29208549E40071A767 /* DemoCell.swift in Sources */,
 				AF041D3520854C7F0071A767 /* FoldingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFCA864620868658007D85EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCA8657208686B7007D85EB /* PlayerManager.swift in Sources */,
+				AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFCA865020868658007D85EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF35A6C72073EA8600402716 /* MosherScouting */;
+			targetProxy = AFCA864F20868658007D85EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */ = {
@@ -339,6 +432,42 @@
 			};
 			name = Release;
 		};
+		AFCA865220868658007D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZT9X443J9;
+				INFOPLIST_FILE = MosherScoutingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gambrell.MosherScoutingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MosherScouting.app/MosherScouting";
+			};
+			name = Debug;
+		};
+		AFCA865320868658007D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZT9X443J9;
+				INFOPLIST_FILE = MosherScoutingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gambrell.MosherScoutingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MosherScouting.app/MosherScouting";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +485,15 @@
 			buildConfigurations = (
 				AF35A6DB2073EA8600402716 /* Debug */,
 				AF35A6DC2073EA8600402716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCA865120868658007D85EB /* Build configuration list for PBXNativeTarget "MosherScoutingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCA865220868658007D85EB /* Debug */,
+				AFCA865320868658007D85EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
