@@ -19,6 +19,7 @@
 		AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */; };
 		AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
+		AFA188702087E0CE001C4527 /* misst.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA1886F2087E0CD001C4527 /* misst.png */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
 		AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA864C20868658007D85EB /* PlayerManagerTests.swift */; };
 		AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
@@ -51,6 +52,7 @@
 		AF35A6D72073EA8600402716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
+		AFA1886F2087E0CD001C4527 /* misst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misst.png; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AFCA864A20868658007D85EB /* MosherScoutingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosherScoutingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCA864C20868658007D85EB /* PlayerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManagerTests.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */,
 				AF01FBD92081741F00BD65C3 /* players.plist */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
+				AFA1886F2087E0CD001C4527 /* misst.png */,
 			);
 			path = MosherScouting;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				AF55964620829EA000621511 /* Picture 56.jpg in Resources */,
 				AF041D3320854A7F0071A767 /* Info.plist in Resources */,
 				AF041D3620854CB10071A767 /* MainOLD.storyboard in Resources */,
+				AFA188702087E0CE001C4527 /* misst.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
 				AF01FBDA2081742000BD65C3 /* players.plist in Resources */,
 				AFCA864320866A16007D85EB /* Main.storyboard in Resources */,
