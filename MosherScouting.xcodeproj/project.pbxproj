@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF01FBDA2081742000BD65C3 /* players.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF01FBD92081741F00BD65C3 /* players.plist */; };
-		AF041D222085483D0071A767 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF041D212085483C0071A767 /* MainTableViewController.swift */; };
-		AF041D29208549E40071A767 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF041D28208549E30071A767 /* DemoCell.swift */; };
-		AF041D3320854A7F0071A767 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF041D3020854A7F0071A767 /* Info.plist */; };
-		AF041D3520854C7F0071A767 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF041D2F20854A7F0071A767 /* FoldingCell.swift */; };
-		AF041D3620854CB10071A767 /* MainOLD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF041D26208548FE0071A767 /* MainOLD.storyboard */; };
 		AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CB2073EA8600402716 /* AppDelegate.swift */; };
 		AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CD2073EA8600402716 /* ViewController.swift */; };
 		AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D22073EA8600402716 /* Assets.xcassets */; };
@@ -38,12 +33,6 @@
 
 /* Begin PBXFileReference section */
 		AF01FBD92081741F00BD65C3 /* players.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = players.plist; sourceTree = "<group>"; };
-		AF041D212085483C0071A767 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		AF041D26208548FE0071A767 /* MainOLD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainOLD.storyboard; sourceTree = "<group>"; };
-		AF041D28208549E30071A767 /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
-		AF041D2E20854A7F0071A767 /* FoldingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldingCell.h; path = MosherScouting/FoldingCell/FoldingCell.h; sourceTree = SOURCE_ROOT; };
-		AF041D2F20854A7F0071A767 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoldingCell.swift; path = MosherScouting/FoldingCell/FoldingCell.swift; sourceTree = SOURCE_ROOT; };
-		AF041D3020854A7F0071A767 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MosherScouting/FoldingCell/Info.plist; sourceTree = SOURCE_ROOT; };
 		AF35A6C82073EA8600402716 /* MosherScouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosherScouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35A6CB2073EA8600402716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF35A6CD2073EA8600402716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,17 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF041D2C20854A5F0071A767 /* FoldingCell */ = {
-			isa = PBXGroup;
-			children = (
-				AF041D2E20854A7F0071A767 /* FoldingCell.h */,
-				AF041D2F20854A7F0071A767 /* FoldingCell.swift */,
-				AF041D3020854A7F0071A767 /* Info.plist */,
-			);
-			name = FoldingCell;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		AF35A6BF2073EA8600402716 = {
 			isa = PBXGroup;
 			children = (
@@ -111,15 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				AFCA86542086866B007D85EB /* Networking */,
-				AF041D2C20854A5F0071A767 /* FoldingCell */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
-				AF041D28208549E30071A767 /* DemoCell.swift */,
 				AF35A6CD2073EA8600402716 /* ViewController.swift */,
-				AF041D212085483C0071A767 /* MainTableViewController.swift */,
 				AF35A6D22073EA8600402716 /* Assets.xcassets */,
 				AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */,
 				AFCA864220866A16007D85EB /* Main.storyboard */,
-				AF041D26208548FE0071A767 /* MainOLD.storyboard */,
 				AF35A6D72073EA8600402716 /* Info.plist */,
 				AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */,
 				AF01FBD92081741F00BD65C3 /* players.plist */,
@@ -231,8 +205,6 @@
 			files = (
 				AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */,
 				AF55964620829EA000621511 /* Picture 56.jpg in Resources */,
-				AF041D3320854A7F0071A767 /* Info.plist in Resources */,
-				AF041D3620854CB10071A767 /* MainOLD.storyboard in Resources */,
 				AFA188702087E0CE001C4527 /* misst.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
 				AF01FBDA2081742000BD65C3 /* players.plist in Resources */,
@@ -254,13 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF041D222085483D0071A767 /* MainTableViewController.swift in Sources */,
 				AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */,
 				AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */,
 				AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */,
 				AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */,
-				AF041D29208549E40071A767 /* DemoCell.swift in Sources */,
-				AF041D3520854C7F0071A767 /* FoldingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
