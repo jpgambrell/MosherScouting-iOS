@@ -41,7 +41,6 @@
 		AF041D212085483C0071A767 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		AF041D26208548FE0071A767 /* MainOLD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainOLD.storyboard; sourceTree = "<group>"; };
 		AF041D28208549E30071A767 /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
-		AF041D2E20854A7F0071A767 /* FoldingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldingCell.h; path = MosherScouting/FoldingCell/FoldingCell.h; sourceTree = SOURCE_ROOT; };
 		AF041D2F20854A7F0071A767 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoldingCell.swift; path = MosherScouting/FoldingCell/FoldingCell.swift; sourceTree = SOURCE_ROOT; };
 		AF041D3020854A7F0071A767 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MosherScouting/FoldingCell/Info.plist; sourceTree = SOURCE_ROOT; };
 		AF35A6C82073EA8600402716 /* MosherScouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosherScouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,17 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF041D2C20854A5F0071A767 /* FoldingCell */ = {
-			isa = PBXGroup;
-			children = (
-				AF041D2E20854A7F0071A767 /* FoldingCell.h */,
-				AF041D2F20854A7F0071A767 /* FoldingCell.swift */,
-				AF041D3020854A7F0071A767 /* Info.plist */,
-			);
-			name = FoldingCell;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		AF35A6BF2073EA8600402716 = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +98,8 @@
 		AF35A6CA2073EA8600402716 /* MosherScouting */ = {
 			isa = PBXGroup;
 			children = (
+				AF369E1F208905E800F868BE /* FoldingCell */,
 				AFCA86542086866B007D85EB /* Networking */,
-				AF041D2C20854A5F0071A767 /* FoldingCell */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
 				AF041D28208549E30071A767 /* DemoCell.swift */,
 				AF35A6CD2073EA8600402716 /* ViewController.swift */,
@@ -127,6 +115,15 @@
 				AFA1886F2087E0CD001C4527 /* misst.png */,
 			);
 			path = MosherScouting;
+			sourceTree = "<group>";
+		};
+		AF369E1F208905E800F868BE /* FoldingCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF041D2F20854A7F0071A767 /* FoldingCell.swift */,
+				AF041D3020854A7F0071A767 /* Info.plist */,
+			);
+			path = FoldingCell;
 			sourceTree = "<group>";
 		};
 		AFCA864B20868658007D85EB /* MosherScoutingTests */ = {
