@@ -44,9 +44,14 @@ class RosterTableViewController: UITableViewController {
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? RosterTableViewCell {
-            cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
+            
+         
             tableView.beginUpdates()
+            cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
             tableView.endUpdates()
+            if !(cell.detailView?.isHidden)! {
+              tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+            }
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
