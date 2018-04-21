@@ -13,6 +13,9 @@
 		AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D22073EA8600402716 /* Assets.xcassets */; };
 		AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */; };
 		AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */; };
+		AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46447F208A632E003A8966 /* RosterTableViewController.swift */; };
+		AF464483208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
+		AF464484208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
 		AFA188702087E0CE001C4527 /* misst.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA1886F2087E0CD001C4527 /* misst.png */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
@@ -40,6 +43,8 @@
 		AF35A6D52073EA8600402716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35A6D72073EA8600402716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF46447F208A632E003A8966 /* RosterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewController.swift; sourceTree = "<group>"; };
+		AF464482208A66D3003A8966 /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
 		AFA1886F2087E0CD001C4527 /* misst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misst.png; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -91,9 +96,11 @@
 				AFCA86542086866B007D85EB /* Networking */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
 				AF35A6CD2073EA8600402716 /* ViewController.swift */,
+				AF46447F208A632E003A8966 /* RosterTableViewController.swift */,
 				AF35A6D22073EA8600402716 /* Assets.xcassets */,
 				AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */,
 				AFCA864220866A16007D85EB /* Main.storyboard */,
+				AF464482208A66D3003A8966 /* RosterTableViewCell.swift */,
 				AF35A6D72073EA8600402716 /* Info.plist */,
 				AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */,
 				AF01FBD92081741F00BD65C3 /* players.plist */,
@@ -228,6 +235,8 @@
 			files = (
 				AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */,
 				AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */,
+				AF464483208A66D3003A8966 /* RosterTableViewCell.swift in Sources */,
+				AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */,
 				AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */,
 				AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */,
 			);
@@ -239,6 +248,7 @@
 			files = (
 				AFCA8657208686B7007D85EB /* PlayerManager.swift in Sources */,
 				AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */,
+				AF464484208A66D3003A8966 /* RosterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
