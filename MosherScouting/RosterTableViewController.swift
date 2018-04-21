@@ -34,14 +34,22 @@ class RosterTableViewController: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath)
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RosterTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath) as! RosterTableViewCell
+        
         // Configure the cell...
 
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? RosterTableViewCell {
+            cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
+            tableView.beginUpdates()
+            tableView.endUpdates()
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

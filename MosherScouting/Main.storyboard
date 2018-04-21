@@ -449,7 +449,7 @@
         <scene sceneID="1Uc-qq-xv1">
             <objects>
                 <tableViewController id="Ann-5y-wDv" customClass="RosterTableViewController" customModule="MosherScouting" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="Cuw-sG-ILE">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="Cuw-sG-ILE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
@@ -467,8 +467,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivn-fF-Xxo" userLabel="SummaryView">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6g6-dZ-zGL">
-                                                            <rect key="frame" x="8" y="27" width="120" height="324"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture 56.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6g6-dZ-zGL">
+                                                            <rect key="frame" x="8" y="27" width="120" height="148"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqj-44-Zlk" userLabel="Name View">
@@ -574,6 +574,10 @@
                                         <constraint firstAttribute="bottom" secondItem="msx-yh-YfD" secondAttribute="bottom" id="xKO-eW-NYw"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailView" destination="6EX-b8-szf" id="L15-lO-l7b"/>
+                                    <outlet property="summaryView" destination="Ivn-fF-Xxo" id="YsR-kO-uWv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

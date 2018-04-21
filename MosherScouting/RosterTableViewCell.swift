@@ -9,7 +9,13 @@
 import UIKit
 
 class RosterTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var detailView: UIView!{
+        didSet {
+            detailView.isHidden = true
+        }
+    }
+    
+    @IBOutlet weak var summaryView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
