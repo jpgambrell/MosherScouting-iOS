@@ -9,6 +9,11 @@
 import UIKit
 
 class RosterTableViewController: UITableViewController {
+    var items: [PlayerModel] =  {
+        PlayerManager().loadPlayerDataFromPlist()
+    }()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +35,14 @@ class RosterTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RosterTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath) as! RosterTableViewCell
         
-        // Configure the cell...
+        cell.populateCell(player: items[indexPath.row])
 
         return cell
     }

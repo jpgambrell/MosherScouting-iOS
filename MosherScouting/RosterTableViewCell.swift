@@ -15,7 +15,23 @@ class RosterTableViewCell: UITableViewCell {
         }
     }
     
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var position: UILabel!
+    @IBOutlet weak var height: UILabel!
+    @IBOutlet weak var weight: UILabel!
     @IBOutlet weak var summaryView: UIView!
+    
+    
+    
+    func populateCell(player: PlayerModel) {
+        name.text = player.name
+        position.text = player.position
+        height.text = player.height
+        weight.text = player.weight
+    }
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
