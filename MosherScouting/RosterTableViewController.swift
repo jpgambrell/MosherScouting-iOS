@@ -60,7 +60,7 @@ class RosterTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? RosterTableViewCell {
-            
+           
             
             tableView.beginUpdates()
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
@@ -68,14 +68,17 @@ class RosterTableViewController: UITableViewController {
             if !(cell.detailView?.isHidden)! {
                 tableView.scrollToRow(at: indexPath, at: .top, animated: true)
             }
-            tableView.deselectRow(at: indexPath, animated: true)
+           // tableView.deselectRow(at: indexPath, animated: true)
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RosterTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath) as! RosterTableViewCell
+      //  cell.summaryView.layer.cornerRadius = 10
+      //  cell.summaryView.layer.masksToBounds = true
         
-        // Configure the cell...
+        cell.summaryView.roundCorners(.allCorners, radius: 10)
+        
         let viewItems = (filterActive && filteredItems.count > 0) ? filteredItems : self.items
         cell.populateCell(player: viewItems[indexPath.row])
         return cell
@@ -120,5 +123,12 @@ extension RosterTableViewController: UISearchControllerDelegate, UISearchBarDele
 }
 
 
-////////
+extension UIView {
+    func roundCorners(_ corners:UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}
 
