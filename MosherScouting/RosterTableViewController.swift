@@ -21,7 +21,7 @@ class RosterTableViewController: UITableViewController {
         setupSearchBar()
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 175
+        tableView.estimatedRowHeight = 150
         
     }
     func setupSearchBar() {
@@ -61,8 +61,6 @@ class RosterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? RosterTableViewCell {
            
-            
-         
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
             
             if !(cell.detailView?.isHidden)! {
