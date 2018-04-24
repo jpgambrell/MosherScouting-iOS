@@ -62,13 +62,13 @@ class RosterTableViewController: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) as? RosterTableViewCell {
            
             
-            tableView.beginUpdates()
+         
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
             
             if !(cell.detailView?.isHidden)! {
                 tableView.scrollToRow(at: indexPath, at: .top, animated: true)
             }
-            
+            tableView.beginUpdates()
             tableView.endUpdates()
            // tableView.deselectRow(at: indexPath, animated: true)
         }
@@ -77,10 +77,9 @@ class RosterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RosterTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath) as! RosterTableViewCell
        
-        cell.containerView.roundCorners(.allCorners, radius: 10)
         
         let viewItems = (filterActive && filteredItems.count > 0) ? filteredItems : self.items
-        cell.populateCell(player: viewItems[indexPath.row])
+       // cell.populateCell(player: viewItems[indexPath.row])
         return cell
     }
     

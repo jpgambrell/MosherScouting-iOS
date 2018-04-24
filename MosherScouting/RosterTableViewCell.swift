@@ -25,17 +25,17 @@ class RosterTableViewCell: UITableViewCell {
     
     
     func populateCell(player: PlayerModel) {
-        name.text = player.name
-        position.text = player.position
-        height.text = player.height
-        weight.text = player.weight
+        //name.text = player.name
+        //position.text = player.position
+        //height.text = player.height
+        //weight.text = player.weight
     }
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        containerView.layer.cornerRadius = 5.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
