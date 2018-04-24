@@ -64,10 +64,12 @@ class RosterTableViewController: UITableViewController {
             
             tableView.beginUpdates()
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
-            tableView.endUpdates()
+            
             if !(cell.detailView?.isHidden)! {
                 tableView.scrollToRow(at: indexPath, at: .top, animated: true)
             }
+            
+            tableView.endUpdates()
            // tableView.deselectRow(at: indexPath, animated: true)
         }
     }
@@ -77,7 +79,7 @@ class RosterTableViewController: UITableViewController {
       //  cell.summaryView.layer.cornerRadius = 10
       //  cell.summaryView.layer.masksToBounds = true
         
-        cell.summaryView.roundCorners(.allCorners, radius: 10)
+        cell.containerView.roundCorners(.allCorners, radius: 10)
         
         let viewItems = (filterActive && filteredItems.count > 0) ? filteredItems : self.items
         cell.populateCell(player: viewItems[indexPath.row])

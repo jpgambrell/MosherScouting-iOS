@@ -14,6 +14,7 @@ class RosterTableViewCell: UITableViewCell {
             detailView.isHidden = true
         }
     }
+    @IBOutlet weak var containerView: UIView!
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var position: UILabel!
