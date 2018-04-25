@@ -175,19 +175,19 @@
                                                                     <color key="textColor" red="0.086274509799999996" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-uh-Clr">
-                                                                    <rect key="frame" x="8" y="318" width="307" height="150"/>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-uh-Clr">
+                                                                    <rect key="frame" x="8" y="318" width="307" height="200"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="990" constant="150" id="15m-bY-0BX"/>
+                                                                        <constraint firstAttribute="height" priority="990" constant="200" id="15m-bY-0BX"/>
                                                                     </constraints>
                                                                     <string key="text">For the 2017 season, Ryan Switzer was buried behind Cole Beasley on the roster and only caught one pass before the team's meaningless Week 17 game. Earlier in the year, Switzer was miscast as the Lucky Whitehead replacement, but didn't have the speed or instant accerelation to fill that role. Instead, he carved out a role as an explosive punt returner who can change field positions at the drop of a hat. Switzer figures to be a bigger part of the Cowboys' passing offense in 2018, but will likely need a Cole Beasley injury or trade before he can play significant snaps.</string>
                                                                     <color key="textColor" red="0.086274509799999996" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRh-s2-P6J">
-                                                                    <rect key="frame" x="104" y="487" width="117" height="32"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRh-s2-P6J">
+                                                                    <rect key="frame" x="104" y="533" width="117" height="32"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="32" id="iXh-cy-7FM"/>
                                                                     </constraints>
@@ -203,7 +203,7 @@
                                                                 <constraint firstItem="0OI-Yu-xW0" firstAttribute="top" secondItem="Vsb-C0-rJz" secondAttribute="bottom" constant="12" id="3DV-HR-YF8"/>
                                                                 <constraint firstItem="VJf-UO-59R" firstAttribute="leading" secondItem="eEY-yG-xSL" secondAttribute="leading" constant="10" id="8NB-mm-vGh"/>
                                                                 <constraint firstItem="JVc-UD-Yrl" firstAttribute="leading" secondItem="eEY-yG-xSL" secondAttribute="leading" constant="10" id="DcA-WB-P7b"/>
-                                                                <constraint firstItem="SRh-s2-P6J" firstAttribute="top" secondItem="aAF-uh-Clr" secondAttribute="bottom" constant="19" id="ElD-il-8fa"/>
+                                                                <constraint firstItem="SRh-s2-P6J" firstAttribute="top" secondItem="aAF-uh-Clr" secondAttribute="bottom" constant="15" id="ElD-il-8fa"/>
                                                                 <constraint firstItem="aAF-uh-Clr" firstAttribute="leading" secondItem="eEY-yG-xSL" secondAttribute="leading" constant="8" id="Lmo-fi-bNS"/>
                                                                 <constraint firstItem="Vsb-C0-rJz" firstAttribute="top" secondItem="JVc-UD-Yrl" secondAttribute="bottom" constant="8" id="N2P-DN-4Ai"/>
                                                                 <constraint firstAttribute="trailing" secondItem="aAF-uh-Clr" secondAttribute="trailing" constant="10" id="POQ-hs-HC9"/>
