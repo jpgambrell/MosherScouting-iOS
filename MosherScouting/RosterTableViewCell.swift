@@ -21,14 +21,20 @@ class RosterTableViewCell: UITableViewCell {
     @IBOutlet weak var height: UILabel!
     @IBOutlet weak var weight: UILabel!
     @IBOutlet weak var summaryView: UIView!
+    @IBOutlet weak var playerImage: UIImageView!
     
+    @IBOutlet weak var grade: UILabel!
+    @IBOutlet weak var mockchart: UIImageView!
     
+    @IBOutlet weak var summary: UITextView!
     
     func populateCell(player: PlayerModel) {
-        //name.text = player.name
-        //position.text = player.position
-        //height.text = player.height
-        //weight.text = player.weight
+        name.text = player.name
+        position.text = player.position
+        height.text = player.height
+        weight.text = player.weight
+        grade.text = player.grade
+        summary.text = player.summary
     }
     
     

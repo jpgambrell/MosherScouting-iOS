@@ -77,7 +77,7 @@ class RosterTableViewController: UITableViewController {
        
         
         let viewItems = (filterActive && filteredItems.count > 0) ? filteredItems : self.items
-       // cell.populateCell(player: viewItems[indexPath.row])
+        cell.populateCell(player: viewItems[indexPath.row])
         return cell
     }
     
