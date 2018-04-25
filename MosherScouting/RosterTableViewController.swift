@@ -21,7 +21,7 @@ class RosterTableViewController: UITableViewController {
         setupSearchBar()
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 150
+        tableView.estimatedRowHeight = 140
         
     }
     func setupSearchBar() {

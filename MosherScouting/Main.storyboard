@@ -53,14 +53,14 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="325" height="150"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture 56.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cuZ-ah-ei7">
-                                                                    <rect key="frame" x="0.0" y="24" width="120" height="120"/>
+                                                                    <rect key="frame" x="0.0" y="10" width="120" height="120"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="120" id="GY5-Yd-v3q"/>
                                                                         <constraint firstAttribute="height" constant="120" id="UmA-39-3qJ"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-2L-OZ4" userLabel="Name View">
-                                                                    <rect key="frame" x="120" y="17" width="205" height="128"/>
+                                                                    <rect key="frame" x="120" y="10" width="205" height="128"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#4 DAK PRESCOTT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-gE-2mR" userLabel="PlayerName">
                                                                             <rect key="frame" x="10" y="14" width="195" height="28"/>
@@ -154,10 +154,10 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstItem="cuZ-ah-ei7" firstAttribute="leading" secondItem="h6o-uM-dEY" secondAttribute="leading" id="5ho-gB-JfM"/>
-                                                                <constraint firstItem="cuZ-ah-ei7" firstAttribute="top" secondItem="h6o-uM-dEY" secondAttribute="top" constant="24" id="A4H-2O-vLO"/>
+                                                                <constraint firstItem="cuZ-ah-ei7" firstAttribute="top" secondItem="h6o-uM-dEY" secondAttribute="top" constant="10" id="A4H-2O-vLO"/>
                                                                 <constraint firstAttribute="trailing" secondItem="JvG-2L-OZ4" secondAttribute="trailing" id="KJT-y1-4eW"/>
                                                                 <constraint firstAttribute="height" priority="990" constant="150" id="UDE-dM-XgQ"/>
-                                                                <constraint firstItem="JvG-2L-OZ4" firstAttribute="top" secondItem="h6o-uM-dEY" secondAttribute="top" constant="17" id="fEO-iQ-lge"/>
+                                                                <constraint firstItem="JvG-2L-OZ4" firstAttribute="top" secondItem="h6o-uM-dEY" secondAttribute="top" constant="10" id="fEO-iQ-lge"/>
                                                                 <constraint firstItem="JvG-2L-OZ4" firstAttribute="leading" secondItem="cuZ-ah-ei7" secondAttribute="trailing" id="t4T-5U-J4t"/>
                                                             </constraints>
                                                         </view>
