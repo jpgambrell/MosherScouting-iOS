@@ -150,8 +150,11 @@
                                                                     <color key="textColor" red="0.086274509799999996" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MOCKDRAFTABLE CHART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OI-Yu-xW0">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOCKDRAFTABLE CHART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OI-Yu-xW0">
                                                                     <rect key="frame" x="10" y="60" width="156.5" height="14.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="15" id="79v-Yt-AeV"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                     <color key="textColor" red="0.086274509799999996" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -163,7 +166,7 @@
                                                                         <constraint firstAttribute="width" constant="200" id="yhJ-1E-vlv"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUMMARY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJf-UO-59R" userLabel="Summary Title">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJf-UO-59R" userLabel="Summary Title">
                                                                     <rect key="frame" x="10" y="295" width="305" height="21"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="luz-tM-AWg"/>
@@ -178,7 +181,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="200" id="Awg-JD-6S5"/>
                                                                     </constraints>
-                                                                    <mutableString key="text">For the 2017 season, Ryan Switzer was buried behind Cole Beasley on the roster and only caught one pass before the team's meaningless Week 17 game. Earlier in the year, Switzer was miscast as the Lucky Whitehead replacement, but didn't have the speed or instant accerelation to fill that role. Instead, he carved out a role as an explosive punt returner who can change field positions at the drop of a hat. Switzer figures to be a bigger part of the Cowboys' passing offense in 2018, but will likely need a Cole Beasley injury or trade before he can play significant snaps.</mutableString>
+                                                                    <string key="text">For the 2017 season, Ryan Switzer was buried behind Cole Beasley on the roster and only caught one pass before the team's meaningless Week 17 game. Earlier in the year, Switzer was miscast as the Lucky Whitehead replacement, but didn't have the speed or instant accerelation to fill that role. Instead, he carved out a role as an explosive punt returner who can change field positions at the drop of a hat. Switzer figures to be a bigger part of the Cowboys' passing offense in 2018, but will likely need a Cole Beasley injury or trade before he can play significant snaps.</string>
                                                                     <color key="textColor" red="0.086274509799999996" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -204,7 +207,9 @@
                                                                 <constraint firstItem="Vsb-C0-rJz" firstAttribute="top" secondItem="JVc-UD-Yrl" secondAttribute="bottom" constant="8" id="N2P-DN-4Ai"/>
                                                                 <constraint firstItem="B9P-GD-pvs" firstAttribute="top" secondItem="0OI-Yu-xW0" secondAttribute="bottom" constant="10" id="RAc-mU-cxE"/>
                                                                 <constraint firstItem="aAF-uh-Clr" firstAttribute="leading" secondItem="eEY-yG-xSL" secondAttribute="leading" constant="8" id="ReD-3j-ppm"/>
+                                                                <constraint firstItem="0OI-Yu-xW0" firstAttribute="leading" secondItem="eEY-yG-xSL" secondAttribute="leading" constant="10" id="SlN-UN-O3J"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Vsb-C0-rJz" secondAttribute="trailing" constant="10" id="TEa-LS-eIO"/>
+                                                                <constraint firstAttribute="trailing" secondItem="VJf-UO-59R" secondAttribute="trailing" constant="10" id="V2M-N7-GAu"/>
                                                                 <constraint firstItem="SRh-s2-P6J" firstAttribute="top" secondItem="aAF-uh-Clr" secondAttribute="bottom" constant="19" id="YCq-dP-Ti9"/>
                                                                 <constraint firstItem="VJf-UO-59R" firstAttribute="top" secondItem="B9P-GD-pvs" secondAttribute="bottom" constant="10" id="YxU-a2-VNu"/>
                                                                 <constraint firstItem="Vsb-C0-rJz" firstAttribute="leading" secondItem="eEY-yG-xSL" secondAttribute="leading" constant="10" id="ZLE-1G-WK3"/>
