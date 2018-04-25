@@ -16,6 +16,7 @@
 		AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46447F208A632E003A8966 /* RosterTableViewController.swift */; };
 		AF464483208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
 		AF464484208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
+		AF4644882090DB90003A8966 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4644872090DB90003A8966 /* FullViewController.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
 		AFA188702087E0CE001C4527 /* misst.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA1886F2087E0CD001C4527 /* misst.png */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF46447F208A632E003A8966 /* RosterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewController.swift; sourceTree = "<group>"; };
 		AF464482208A66D3003A8966 /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
+		AF4644872090DB90003A8966 /* FullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
 		AFA1886F2087E0CD001C4527 /* misst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misst.png; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				AF01FBD92081741F00BD65C3 /* players.plist */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 				AFA1886F2087E0CD001C4527 /* misst.png */,
+				AF4644872090DB90003A8966 /* FullViewController.swift */,
 			);
 			path = MosherScouting;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */,
 				AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */,
 				AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */,
+				AF4644882090DB90003A8966 /* FullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
