@@ -100,6 +100,7 @@
 				AF35A6CD2073EA8600402716 /* ViewController.swift */,
 				AF46447F208A632E003A8966 /* RosterTableViewController.swift */,
 				AF464482208A66D3003A8966 /* RosterTableViewCell.swift */,
+				AF4644872090DB90003A8966 /* FullViewController.swift */,
 				AF35A6D22073EA8600402716 /* Assets.xcassets */,
 				AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */,
 				AFCA864220866A16007D85EB /* Main.storyboard */,
@@ -108,7 +109,6 @@
 				AF01FBD92081741F00BD65C3 /* players.plist */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 				AFA1886F2087E0CD001C4527 /* misst.png */,
-				AF4644872090DB90003A8966 /* FullViewController.swift */,
 			);
 			path = MosherScouting;
 			sourceTree = "<group>";
