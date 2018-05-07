@@ -7,6 +7,12 @@
 //
 
 import Foundation
+
+struct AttributeTitles {
+    var position : String = ""
+    var titles = Array<String>()
+}
+
 struct PlayerModel {
     var name : String = ""
     var position : String = ""
@@ -71,6 +77,8 @@ var items: [Dictionary<String, String>] =  {
     let data = try! Data(contentsOf: Bundle.main.url(forResource: "players", withExtension: "plist")!)
     return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [Dictionary<String, String>]
 }()
+    
+    //var 
 
 
 func loadPlayerDataFromPlist() -> [PlayerModel] {
@@ -82,4 +90,5 @@ func loadPlayerDataFromPlist() -> [PlayerModel] {
     return players
 }
 }
+
 

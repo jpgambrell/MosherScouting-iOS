@@ -9,11 +9,24 @@
 import UIKit
 
 class FullViewController: UIViewController {
-
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var position: UILabel!
+    @IBOutlet weak var height: UILabel!
+    @IBOutlet weak var weight: UILabel!
+    @IBOutlet weak var summaryView: UIView!
+    @IBOutlet weak var playerImage: UIImageView!
+    
+    @IBOutlet weak var grade: UILabel!
+    @IBOutlet weak var mockchart: UIImageView!
+    
+    @IBOutlet weak var summary: UITextView!
+    
+    
+    
+    var player = PlayerModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupProfileData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +34,9 @@ class FullViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setupProfileData(){
+        
+    }
 
     /*
     // MARK: - Navigation

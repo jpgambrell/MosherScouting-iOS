@@ -81,6 +81,10 @@ class RosterTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         let vc = segue.destination as! FullViewController
+        vc.player = items[(self.tableView.indexPathForSelectedRow?.row)!]
+    }
     
 }
 extension RosterTableViewController: UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {
