@@ -9,6 +9,7 @@
 import UIKit
 
 class FullViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var position: UILabel!
     @IBOutlet weak var height: UILabel!
@@ -26,6 +27,7 @@ class FullViewController: UIViewController {
     var player = PlayerModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 2000)
         setupProfileData()
     }
 
