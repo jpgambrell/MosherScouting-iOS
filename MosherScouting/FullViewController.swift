@@ -37,7 +37,7 @@ class FullViewController: UIViewController {
     }
     
     func setupProfileData(){
-        
+        let positionAttr = PlayerManager().getTitlesBy(position: player.position)
     }
 
     /*

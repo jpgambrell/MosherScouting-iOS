@@ -73,12 +73,53 @@ struct PlayerModel {
     }
 }
 class PlayerManager {
-var items: [Dictionary<String, String>] =  {
-    let data = try! Data(contentsOf: Bundle.main.url(forResource: "players", withExtension: "plist")!)
-    return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [Dictionary<String, String>]
-}()
+    var items: [Dictionary<String, String>] =  {
+        let data = try! Data(contentsOf: Bundle.main.url(forResource: "players", withExtension: "plist")!)
+        return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [Dictionary<String, String>]
+    }()
     
-    //var 
+    var statTitles: [AttributeTitles] = {
+        var att = [AttributeTitles]()
+        let rbAtt = ["TOTAL CARRIES", "RUSHING YARDS","YARDS/CARRY","RUSH TOUCHDOWNS","RECEPTIONS","REC YARDS","REC TDs"]
+        let olAtt = ["GAMES PLAYED", "GAMES STARTED","TOTAL SNAPS","PENALTIES","PENALTY YARDS","SACKS GIVEN UP","SACK YARDAGE"]
+        let dlAtt = ["TACKLES", "TACKLES FOR LOSS","SACKS","FORCED FUMBLES","TOTAL PRESSURES","QB HITS","PASS DEFLECTIONS"]
+        let lbAtt = ["TACKLES", "TACKLES FOR LOSS","SACKS","FORCED FUMBLES","INTERCEPTIONS","PASS DEFLECTIONS","MISSED TACKLES"]
+        let dbAtt = ["TOTAL SNAPS", "TACKLES","INTERCEPTIONS","PASS DEFLECTIONS","FORCED FUMBLES","MISSED TACKLES", "YARDS ALLOWED"]
+        
+        
+        
+        att.append(AttributeTitles(position: "QUARTERBACK", titles: ["COMPLETION %", "YARDS","YARDS/ATTEMPT","TOUCHDOWNS","INT","PASSER RATING","QBR"]))
+        att.append(AttributeTitles(position: "RUNNING BACK", titles: rbAtt ))
+        att.append(AttributeTitles(position: "FULLBACK", titles: rbAtt))
+       
+         att.append(AttributeTitles(position: "TIGHT END", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))
+        att.append(AttributeTitles(position: "LEFT TACKLE", titles:  olAtt))
+        att.append(AttributeTitles(position: "TACKLE/GUARD", titles:  olAtt))
+        att.append(AttributeTitles(position: "RIGHT GUARD", titles:  olAtt))
+        att.append(AttributeTitles(position: "RIGHT TACKLE", titles:  olAtt))
+        att.append(AttributeTitles(position: "GUARD CENTER", titles:  olAtt))
+        att.append(AttributeTitles(position: "TACKLE", titles:  olAtt))
+        att.append(AttributeTitles(position: "GUARD", titles:  olAtt))
+        att.append(AttributeTitles(position: "LEFT GUARD", titles:  olAtt))
+        
+         att.append(AttributeTitles(position: "DEFENSIVE END", titles:  dlAtt))
+        att.append(AttributeTitles(position: "DEFENSIVE TACKLE", titles:  dlAtt))
+        att.append(AttributeTitles(position: "1 TECHNIQUE", titles:  dlAtt))
+        att.append(AttributeTitles(position: "3 TECHNIQUE", titles:  dlAtt))
+        
+        att.append(AttributeTitles(position: "LINEBACKER", titles:  lbAtt))
+        att.append(AttributeTitles(position: "SAM LINEBACKER", titles:  lbAtt))
+        
+        att.append(AttributeTitles(position: "CORNERBACK", titles:  dbAtt))
+        att.append(AttributeTitles(position: "FREE SAFETY", titles:  dbAtt))
+        att.append(AttributeTitles(position: "STRONG SAFETY", titles:  dbAtt))
+        att.append(AttributeTitles(position: "DEFENSIVE BACK", titles:  dbAtt))
+        
+        att.append(AttributeTitles(position: "KICKER", titles:  ["FG%", "XP%", "20-29", "30-39","40-49","50+","KICKS BLOCKED"]))
+        att.append(AttributeTitles(position: "PUNTER", titles:  ["TOTAL PUNTS", "NET YARDS/PUNT", "PUNTS INSIDE 20", "LONGEST PUNT","TOUCHBACKS","AVG HANG TIME","PUNTS BLOCKED"]))
+        att.append(AttributeTitles(position: "LONG SNAPPER", titles:  ["TACKLES", "TOTAL SNAPS", "CAREER TACKLES", "FUMBLE RECOVERIES","PRO BOWLS","GAMES PLAYED","YEARS PLAYED"]))
+        return att
+    }()
 
 
 func loadPlayerDataFromPlist() -> [PlayerModel] {
@@ -89,6 +130,12 @@ func loadPlayerDataFromPlist() -> [PlayerModel] {
     }
     return players
 }
+    
+    func getTitlesBy(position: String) -> [String] {
+        let a = statTitles.filter { $0.position == position}
+        return a.first?.titles ?? []
+    }
+    
 }
 
 
