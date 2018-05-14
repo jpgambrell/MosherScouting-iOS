@@ -18,6 +18,7 @@
 		AF464484208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
 		AF4644882090DB90003A8966 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4644872090DB90003A8966 /* FullViewController.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
+		AF6AFC8620AA126900699F13 /* playersBeforeDraft.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6AFC8520AA126900699F13 /* playersBeforeDraft.plist */; };
 		AFA188702087E0CE001C4527 /* misst.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA1886F2087E0CD001C4527 /* misst.png */; };
 		AFC71D9D20A4BB86007412BD /* mockable1.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC71D9C20A4BB86007412BD /* mockable1.png */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		AF464482208A66D3003A8966 /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		AF4644872090DB90003A8966 /* FullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
+		AF6AFC8520AA126900699F13 /* playersBeforeDraft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playersBeforeDraft.plist; sourceTree = "<group>"; };
 		AFA1886F2087E0CD001C4527 /* misst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misst.png; sourceTree = "<group>"; };
 		AFC71D9C20A4BB86007412BD /* mockable1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mockable1.png; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				AF35A6D72073EA8600402716 /* Info.plist */,
 				AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */,
 				AF01FBD92081741F00BD65C3 /* players.plist */,
+				AF6AFC8520AA126900699F13 /* playersBeforeDraft.plist */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 				AFC71D9C20A4BB86007412BD /* mockable1.png */,
 				AFA1886F2087E0CD001C4527 /* misst.png */,
@@ -222,6 +225,7 @@
 				AFA188702087E0CE001C4527 /* misst.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
 				AF01FBDA2081742000BD65C3 /* players.plist in Resources */,
+				AF6AFC8620AA126900699F13 /* playersBeforeDraft.plist in Resources */,
 				AFCA864320866A16007D85EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -74,7 +74,7 @@ struct PlayerModel {
 }
 class PlayerManager {
     var items: [Dictionary<String, String>] =  {
-        let data = try! Data(contentsOf: Bundle.main.url(forResource: "players", withExtension: "plist")!)
+        let data = try! Data(contentsOf: Bundle.main.url(forResource: "playersBeforeDraft", withExtension: "plist")!)
         return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [Dictionary<String, String>]
     }()
     
