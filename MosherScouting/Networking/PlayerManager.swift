@@ -40,6 +40,9 @@ struct PlayerModel {
     var grade : String = ""
     var summary : String = ""
     var filmNotes : String = ""
+    var playerImageName : String = ""
+    var playerMockImageName : String = ""
+    var playerLogoImageName : String = ""
     
     func populatePlayer(item : Dictionary<String, String>) -> PlayerModel {
         var p = PlayerModel()
@@ -69,7 +72,24 @@ struct PlayerModel {
         p.grade =  item["2017 grade"] ?? ""
         p.summary =  item["summary"] ?? ""
         p.filmNotes =  item["film notes"] ?? ""
+        p.playerImageName = getPlayerImageName(name: p.name)
+        p.playerMockImageName = getPlayerMockImageName(name: p.name)
+        p.playerLogoImageName = getPlayerLogoImageName(name: p.name)
         return p
+    }
+    func getPlayerNameForImages (name: String) -> String {
+        return name.replacingOccurrences(of: "#", with: "").replacingOccurrences(of: " ", with: "")
+        
+    }
+    func getPlayerImageName(name: String) -> String {
+        return "\(getPlayerNameForImages(name: name))-Picture"
+        
+    }
+    func getPlayerMockImageName(name: String) -> String {
+        return "\(getPlayerNameForImages(name: name))-mock"
+    }
+    func getPlayerLogoImageName(name: String) -> String {
+        return "\(getPlayerNameForImages(name: name))-logo"
     }
 }
 class PlayerManager {
@@ -135,6 +155,8 @@ func loadPlayerDataFromPlist() -> [PlayerModel] {
         let a = statTitles.filter { $0.position == position}
         return a.first?.titles ?? []
     }
+    
+   
     
 }
 

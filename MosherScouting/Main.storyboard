@@ -700,6 +700,7 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                         <outlet property="mockchart" destination="ftC-fE-yJi" id="klU-v6-SP1"/>
                         <outlet property="name" destination="IRQ-GG-H75" id="87A-b4-dcd"/>
                         <outlet property="playerImage" destination="zxd-uw-vMn" id="LnE-8N-8Vy"/>
+                        <outlet property="playerLogo" destination="4yi-xU-GhK" id="VLG-hn-AhT"/>
                         <outlet property="scrollView" destination="jrh-tS-HQ3" id="IRr-nd-WE0"/>
                         <outlet property="sparQ" destination="SVl-SY-utX" id="koU-yl-XOj"/>
                         <outlet property="stat1Title" destination="tjm-CH-N5X" id="IrO-lg-ONc"/>

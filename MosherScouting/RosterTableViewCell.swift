@@ -35,6 +35,8 @@ class RosterTableViewCell: UITableViewCell {
         weight.text = player.weight
         grade.text = player.grade
         summary.text = player.summary
+        playerImage.image = UIImage(named: player.playerImageName)
+        mockchart.image = UIImage(named: player.playerMockImageName)
     }
     
     

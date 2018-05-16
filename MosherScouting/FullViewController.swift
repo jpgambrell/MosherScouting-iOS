@@ -14,6 +14,7 @@ class FullViewController: UIViewController {
     @IBOutlet weak var birthDate: UILabel!
     @IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var playerLogo: UIImageView!
     
     @IBOutlet weak var grade: UILabel!
     @IBOutlet weak var mockchart: UIImageView!
@@ -93,6 +94,10 @@ class FullViewController: UIViewController {
         threeCode.text = player.threeCone
         twentyShuttle.text = player.twentyYdShuttle
         sparQ.text = player.sparq
+        
+        playerImage.image = UIImage(named: player.playerImageName)
+        mockchart.image = UIImage(named: player.playerMockImageName)
+        playerLogo.image = UIImage(named: player.playerLogoImageName)
         
         
     }
