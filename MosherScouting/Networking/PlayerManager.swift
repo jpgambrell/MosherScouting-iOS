@@ -111,7 +111,9 @@ class PlayerManager {
         att.append(AttributeTitles(position: "QUARTERBACK", titles: ["COMPLETION %", "YARDS","YARDS/ATTEMPT","TOUCHDOWNS","INT","PASSER RATING","QBR"]))
         att.append(AttributeTitles(position: "RUNNING BACK", titles: rbAtt ))
         att.append(AttributeTitles(position: "FULLBACK", titles: rbAtt))
-       
+        att.append(AttributeTitles(position: "WIDE RECEIVER", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))
+         att.append(AttributeTitles(position: "SLOT RECEIVER", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))
+        
          att.append(AttributeTitles(position: "TIGHT END", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))
         att.append(AttributeTitles(position: "LEFT TACKLE", titles:  olAtt))
         att.append(AttributeTitles(position: "TACKLE/GUARD", titles:  olAtt))
