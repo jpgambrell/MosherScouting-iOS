@@ -51,7 +51,7 @@ class FullViewController: UIViewController {
     var player = PlayerModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 2000)
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 1032)
         setupProfileData()
     }
 
