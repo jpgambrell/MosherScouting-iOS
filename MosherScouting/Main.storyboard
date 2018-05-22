@@ -318,26 +318,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-tS-HQ3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-tS-HQ3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-Fa-GA6">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-Fa-GA6">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-Yi-gW7" userLabel="SummaryView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-Yi-gW7" userLabel="SummaryView">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Picture 56.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zxd-uw-vMn">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture 56.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zxd-uw-vMn">
                                                         <rect key="frame" x="10" y="10" width="120" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="F8f-op-P08"/>
                                                             <constraint firstAttribute="width" constant="120" id="vNO-dY-HWe"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0CW-aH-tpx" userLabel="Name View">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0CW-aH-tpx" userLabel="Name View">
                                                         <rect key="frame" x="120" y="10" width="255" height="120"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#4 DAK PRESCOTT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRQ-GG-H75" userLabel="PlayerName">
                                                                 <rect key="frame" x="10" y="14" width="231" height="28"/>
@@ -384,15 +382,19 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="zxd-uw-vMn" firstAttribute="bottom" secondItem="0CW-aH-tpx" secondAttribute="bottom" id="6X8-DK-6Od"/>
                                                     <constraint firstItem="zxd-uw-vMn" firstAttribute="top" secondItem="2gO-Yi-gW7" secondAttribute="top" constant="10" id="Cyk-sv-2bV"/>
+                                                    <constraint firstItem="0CW-aH-tpx" firstAttribute="leading" secondItem="2gO-Yi-gW7" secondAttribute="leading" constant="120" id="IDG-5x-QW6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0CW-aH-tpx" secondAttribute="trailing" id="OGl-Qn-0Mj"/>
                                                     <constraint firstItem="zxd-uw-vMn" firstAttribute="leading" secondItem="2gO-Yi-gW7" secondAttribute="leading" constant="10" id="U8q-bg-G9n"/>
+                                                    <constraint firstItem="zxd-uw-vMn" firstAttribute="top" secondItem="0CW-aH-tpx" secondAttribute="top" id="VRO-X7-Mzj"/>
                                                     <constraint firstAttribute="height" priority="990" constant="150" id="wEf-kE-J3G"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-Xx-3oL" userLabel="MockDraft View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-Xx-3oL" userLabel="MockDraft View">
                                                 <rect key="frame" x="0.0" y="150" width="375" height="260"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crk-fb-HfA" userLabel="Draft Mockable View">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Crk-fb-HfA" userLabel="Draft Mockable View">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOCKDRAFTABLE CHART" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9V-z6-A9P" userLabel="2017">
@@ -408,7 +410,7 @@
                                                             <constraint firstAttribute="height" priority="990" constant="50" id="301-M5-WgU"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="mockable1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-fE-yJi">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mockable1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-fE-yJi">
                                                         <rect key="frame" x="0.0" y="50" width="375" height="210"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="990" constant="210" id="XXa-vd-Arl"/>
@@ -428,10 +430,10 @@
                                                     <constraint firstItem="ftC-fE-yJi" firstAttribute="top" secondItem="Crk-fb-HfA" secondAttribute="bottom" id="tpv-Wt-aaE"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-KI-9k0" userLabel="StatsMeasure View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-KI-9k0" userLabel="StatsMeasure View">
                                                 <rect key="frame" x="0.0" y="410" width="375" height="432"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fik-2e-zNW" userLabel="2017 Stats">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fik-2e-zNW" userLabel="2017 Stats">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017 STATISTCIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4o-Wn-h1H">
@@ -454,10 +456,10 @@
                                                             <constraint firstAttribute="height" priority="990" constant="50" id="eNa-kh-Hge"/>
                                                         </constraints>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgC-sh-qT9">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgC-sh-qT9">
                                                         <rect key="frame" x="0.0" y="50" width="300" height="382"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J77-tS-WSa" userLabel="Stats Detail View">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J77-tS-WSa" userLabel="Stats Detail View">
                                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="382"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STAT 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-CH-N5X">
@@ -565,7 +567,7 @@
                                                                     <constraint firstAttribute="height" priority="990" constant="382" id="tjx-yT-1xP"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWk-EN-7Sl" userLabel="Measure Detail View">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWk-EN-7Sl" userLabel="Measure Detail View">
                                                                 <rect key="frame" x="150" y="0.0" width="150" height="382"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40 YARD DASH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QB-hG-mP5">
@@ -727,10 +729,10 @@
                                                     <constraint firstItem="fik-2e-zNW" firstAttribute="top" secondItem="UgP-KI-9k0" secondAttribute="top" id="mKQ-RU-vBU"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXI-56-Fns" userLabel="FilmNotes View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXI-56-Fns" userLabel="FilmNotes View">
                                                 <rect key="frame" x="0.0" y="842" width="375" height="250"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxj-gw-jGt" userLabel="FILM Notes">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxj-gw-jGt" userLabel="FILM Notes">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FILM NOTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPw-dJ-ASE">
@@ -746,7 +748,7 @@
                                                             <constraint firstAttribute="height" priority="990" constant="50" id="X1w-ke-3hb"/>
                                                         </constraints>
                                                     </view>
-                                                    <textView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-xS-rgA">
+                                                    <textView clipsSubviews="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-xS-rgA">
                                                         <rect key="frame" x="0.0" y="50" width="375" height="200"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -778,7 +780,12 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0mK-Fa-GA6" secondAttribute="trailing" id="AkI-wj-wgI"/>
+                                    <constraint firstAttribute="bottom" secondItem="0mK-Fa-GA6" secondAttribute="bottom" constant="-64" id="H7F-VD-0DM"/>
+                                    <constraint firstItem="0mK-Fa-GA6" firstAttribute="top" secondItem="jrh-tS-HQ3" secondAttribute="top" id="NI4-ri-PWf"/>
                                     <constraint firstAttribute="height" priority="990" constant="1092" id="bqb-Ss-yDe"/>
+                                    <constraint firstItem="0mK-Fa-GA6" firstAttribute="centerX" secondItem="jrh-tS-HQ3" secondAttribute="centerX" id="d3u-dD-ugT"/>
+                                    <constraint firstItem="0mK-Fa-GA6" firstAttribute="leading" secondItem="jrh-tS-HQ3" secondAttribute="leading" id="y6M-Fo-uqi"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
