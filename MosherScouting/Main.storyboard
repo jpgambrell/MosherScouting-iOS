@@ -321,8 +321,9 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-tS-HQ3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhH-d9-4Dt" userLabel="Content View">
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-Fa-GA6">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-Yi-gW7" userLabel="SummaryView">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
@@ -774,31 +775,10 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="2gO-Yi-gW7" firstAttribute="leading" secondItem="PhH-d9-4Dt" secondAttribute="leading" id="48f-2H-UPp"/>
-                                            <constraint firstAttribute="trailing" secondItem="2gO-Yi-gW7" secondAttribute="trailing" id="4sk-Aw-v7h"/>
-                                            <constraint firstItem="UgP-KI-9k0" firstAttribute="top" secondItem="ORV-Xx-3oL" secondAttribute="bottom" id="HVk-Fa-K5w"/>
-                                            <constraint firstAttribute="trailing" secondItem="UgP-KI-9k0" secondAttribute="trailing" id="JbG-1w-8oi"/>
-                                            <constraint firstItem="2gO-Yi-gW7" firstAttribute="top" secondItem="PhH-d9-4Dt" secondAttribute="top" id="KJO-Bt-Lef"/>
-                                            <constraint firstAttribute="bottom" secondItem="qXI-56-Fns" secondAttribute="bottom" id="L3h-Mg-aKS"/>
-                                            <constraint firstItem="qXI-56-Fns" firstAttribute="leading" secondItem="PhH-d9-4Dt" secondAttribute="leading" id="LBi-zt-71y"/>
-                                            <constraint firstItem="UgP-KI-9k0" firstAttribute="top" secondItem="ORV-Xx-3oL" secondAttribute="bottom" id="M1v-M5-h2K"/>
-                                            <constraint firstItem="ORV-Xx-3oL" firstAttribute="top" secondItem="2gO-Yi-gW7" secondAttribute="bottom" id="OCM-5u-5Ys"/>
-                                            <constraint firstItem="ORV-Xx-3oL" firstAttribute="leading" secondItem="PhH-d9-4Dt" secondAttribute="leading" id="PtF-1Z-X5b"/>
-                                            <constraint firstItem="UgP-KI-9k0" firstAttribute="leading" secondItem="PhH-d9-4Dt" secondAttribute="leading" id="X2r-5E-beo"/>
-                                            <constraint firstAttribute="trailing" secondItem="qXI-56-Fns" secondAttribute="trailing" id="cK3-iU-KAh"/>
-                                            <constraint firstAttribute="trailing" secondItem="ORV-Xx-3oL" secondAttribute="trailing" id="ekg-ju-Jaq"/>
-                                            <constraint firstItem="qXI-56-Fns" firstAttribute="top" secondItem="UgP-KI-9k0" secondAttribute="bottom" id="jgw-1D-X3w"/>
-                                            <constraint firstItem="ORV-Xx-3oL" firstAttribute="top" secondItem="2gO-Yi-gW7" secondAttribute="bottom" id="tf4-gu-Grk"/>
-                                            <constraint firstItem="qXI-56-Fns" firstAttribute="top" secondItem="UgP-KI-9k0" secondAttribute="bottom" id="wdc-3L-xKl"/>
-                                        </constraints>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="PhH-d9-4Dt" firstAttribute="width" secondItem="jrh-tS-HQ3" secondAttribute="width" id="T94-vr-6JJ"/>
                                     <constraint firstAttribute="height" priority="990" constant="1092" id="bqb-Ss-yDe"/>
-                                    <constraint firstItem="PhH-d9-4Dt" firstAttribute="height" secondItem="jrh-tS-HQ3" secondAttribute="height" id="cd3-qS-TkO"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
