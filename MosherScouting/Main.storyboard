@@ -405,29 +405,32 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.086274509799999996" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.086274509803921567" green="0.19607843137254902" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="990" constant="50" id="301-M5-WgU"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mockable1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-fE-yJi">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNe-hH-Nhm">
                                                         <rect key="frame" x="0.0" y="50" width="375" height="210"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" priority="990" constant="210" id="XXa-vd-Arl"/>
+                                                            <constraint firstAttribute="height" priority="990" constant="210" id="uKM-f1-5sC"/>
                                                         </constraints>
-                                                    </imageView>
+                                                        <state key="normal" title="Button" image="10RYANSWITZER-mock"/>
+                                                        <connections>
+                                                            <action selector="mockDraftClick:" destination="MZV-bn-juu" eventType="touchUpInside" id="WqF-d4-TS5"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="Crk-fb-HfA" firstAttribute="top" secondItem="ORV-Xx-3oL" secondAttribute="top" id="2Pi-lt-yCG"/>
                                                     <constraint firstAttribute="trailing" secondItem="Crk-fb-HfA" secondAttribute="trailing" id="Ihw-aM-OrZ"/>
                                                     <constraint firstItem="Crk-fb-HfA" firstAttribute="leading" secondItem="ORV-Xx-3oL" secondAttribute="leading" id="Nh4-Dz-Ptc"/>
-                                                    <constraint firstItem="ftC-fE-yJi" firstAttribute="top" secondItem="Crk-fb-HfA" secondAttribute="bottom" id="cVj-oH-mYB"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ftC-fE-yJi" secondAttribute="bottom" id="ioT-Ag-kCj"/>
-                                                    <constraint firstItem="ftC-fE-yJi" firstAttribute="leading" secondItem="ORV-Xx-3oL" secondAttribute="leading" id="t7T-pm-RAK"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ftC-fE-yJi" secondAttribute="trailing" id="tAE-dl-ZYf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xNe-hH-Nhm" secondAttribute="trailing" id="Ytw-si-kOD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xNe-hH-Nhm" secondAttribute="bottom" id="cCr-R3-WW4"/>
+                                                    <constraint firstItem="xNe-hH-Nhm" firstAttribute="leading" secondItem="ORV-Xx-3oL" secondAttribute="leading" id="cxe-ex-Lyo"/>
+                                                    <constraint firstItem="xNe-hH-Nhm" firstAttribute="top" secondItem="Crk-fb-HfA" secondAttribute="bottom" id="mYi-GI-ms8"/>
                                                     <constraint firstAttribute="height" priority="990" constant="260" id="tFg-VG-12D"/>
-                                                    <constraint firstItem="ftC-fE-yJi" firstAttribute="top" secondItem="Crk-fb-HfA" secondAttribute="bottom" id="tpv-Wt-aaE"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-KI-9k0" userLabel="StatsMeasure View">
@@ -806,7 +809,7 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                         <outlet property="fortyDash" destination="kPq-pe-8eE" id="QiF-0a-KA5"/>
                         <outlet property="grade" destination="Nsc-RW-thR" id="HZz-gB-fvh"/>
                         <outlet property="handSize" destination="Cre-Nj-Lrs" id="WL1-xW-ugp"/>
-                        <outlet property="mockchart" destination="ftC-fE-yJi" id="klU-v6-SP1"/>
+                        <outlet property="mockchart" destination="xNe-hH-Nhm" id="rGj-qb-caz"/>
                         <outlet property="name" destination="IRQ-GG-H75" id="87A-b4-dcd"/>
                         <outlet property="playerImage" destination="zxd-uw-vMn" id="LnE-8N-8Vy"/>
                         <outlet property="playerLogo" destination="4yi-xU-GhK" id="VLG-hn-AhT"/>
@@ -838,6 +841,7 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
         </scene>
     </scenes>
     <resources>
+        <image name="10RYANSWITZER-mock" width="246" height="205"/>
         <image name="Picture 56.jpg" width="478" height="300"/>
         <image name="misst.png" width="195" height="86"/>
         <image name="mockable1.png" width="373" height="319"/>

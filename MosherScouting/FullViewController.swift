@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FullViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var name: UILabel!
@@ -17,7 +18,7 @@ class FullViewController: UIViewController {
     @IBOutlet weak var playerLogo: UIImageView!
     
     @IBOutlet weak var grade: UILabel!
-    @IBOutlet weak var mockchart: UIImageView!
+    @IBOutlet weak var mockchart: UIButton!
     
     @IBOutlet weak var summary: UITextView!
     
@@ -96,7 +97,9 @@ class FullViewController: UIViewController {
         sparQ.text = player.sparq
         
         playerImage.image = UIImage(named: player.playerImageName)
-        mockchart.image = UIImage(named: player.playerMockImageName)
+        
+        mockchart.setImage(UIImage(named: player.playerMockImageName), for: .normal)
+        
         playerLogo.image = UIImage(named: player.playerLogoImageName)
         
         
@@ -111,5 +114,13 @@ class FullViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func mockDraftClick(_ sender: Any) {
+        let configuration = ImageViewerConfiguration { config in
+            config.imageView = mockchart.imageView
+        }
+        
+        present(ImageViewerController(configuration: configuration), animated: true)
+        
+    }
+    
 }

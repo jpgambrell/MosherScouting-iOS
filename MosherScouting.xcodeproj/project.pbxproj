@@ -25,6 +25,17 @@
 		AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA864C20868658007D85EB /* PlayerManagerTests.swift */; };
 		AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
 		AFCA8657208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
+		AFF27BA020B4A5DF009DBFA2 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27B9A20B4A5DF009DBFA2 /* ImageViewerController.swift */; };
+		AFF27BA120B4A5DF009DBFA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27B9B20B4A5DF009DBFA2 /* Utilities.swift */; };
+		AFF27BA220B4A5DF009DBFA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFF27B9D20B4A5DF009DBFA2 /* Info.plist */; };
+		AFF27BA320B4A5DF009DBFA2 /* ImageViewerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27B9E20B4A5DF009DBFA2 /* ImageViewerConfiguration.swift */; };
+		AFF27BA420B4A5DF009DBFA2 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27B9F20B4A5DF009DBFA2 /* AnimatableImageView.swift */; };
+		AFF27BA720B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF27BA520B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets */; };
+		AFF27BA820B4A5EA009DBFA2 /* ImageViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF27BA620B4A5EA009DBFA2 /* ImageViewerController.xib */; };
+		AFF27BAD20B4A5F6009DBFA2 /* ImageViewerDismissalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BA920B4A5F6009DBFA2 /* ImageViewerDismissalInteractor.swift */; };
+		AFF27BAE20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BAA20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift */; };
+		AFF27BAF20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BAB20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift */; };
+		AFF27BB020B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BAC20B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,18 @@
 		AFCA864C20868658007D85EB /* PlayerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManagerTests.swift; sourceTree = "<group>"; };
 		AFCA864E20868658007D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCA8655208686B7007D85EB /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		AFF27B9A20B4A5DF009DBFA2 /* ImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerController.swift; path = MosherScouting/ImageViewerold/ImageViewerController.swift; sourceTree = SOURCE_ROOT; };
+		AFF27B9B20B4A5DF009DBFA2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = MosherScouting/ImageViewerold/Utilities.swift; sourceTree = SOURCE_ROOT; };
+		AFF27B9C20B4A5DF009DBFA2 /* ImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewer.h; path = MosherScouting/ImageViewerold/ImageViewer.h; sourceTree = SOURCE_ROOT; };
+		AFF27B9D20B4A5DF009DBFA2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MosherScouting/ImageViewerold/Info.plist; sourceTree = SOURCE_ROOT; };
+		AFF27B9E20B4A5DF009DBFA2 /* ImageViewerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerConfiguration.swift; path = MosherScouting/ImageViewerold/ImageViewerConfiguration.swift; sourceTree = SOURCE_ROOT; };
+		AFF27B9F20B4A5DF009DBFA2 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatableImageView.swift; path = MosherScouting/ImageViewerold/AnimatableImageView.swift; sourceTree = SOURCE_ROOT; };
+		AFF27BA520B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "ImageViewer-Assets.xcassets"; path = "MosherScouting/ImageViewerold/Resources/ImageViewer-Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		AFF27BA620B4A5EA009DBFA2 /* ImageViewerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageViewerController.xib; path = MosherScouting/ImageViewerold/Resources/ImageViewerController.xib; sourceTree = SOURCE_ROOT; };
+		AFF27BA920B4A5F6009DBFA2 /* ImageViewerDismissalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerDismissalInteractor.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerDismissalInteractor.swift; sourceTree = SOURCE_ROOT; };
+		AFF27BAA20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerDismissalTransition.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerDismissalTransition.swift; sourceTree = SOURCE_ROOT; };
+		AFF27BAB20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerPresentationTransition.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerPresentationTransition.swift; sourceTree = SOURCE_ROOT; };
+		AFF27BAC20B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerTransitioningHandler.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerTransitioningHandler.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +122,7 @@
 		AF35A6CA2073EA8600402716 /* MosherScouting */ = {
 			isa = PBXGroup;
 			children = (
+				AFF27B9720B4A5AB009DBFA2 /* ImageViewer */,
 				AFCA86542086866B007D85EB /* Networking */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
 				AF35A6CD2073EA8600402716 /* ViewController.swift */,
@@ -134,6 +158,41 @@
 				AFCA8655208686B7007D85EB /* PlayerManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		AFF27B9720B4A5AB009DBFA2 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				AFF27B9F20B4A5DF009DBFA2 /* AnimatableImageView.swift */,
+				AFF27B9C20B4A5DF009DBFA2 /* ImageViewer.h */,
+				AFF27B9E20B4A5DF009DBFA2 /* ImageViewerConfiguration.swift */,
+				AFF27B9A20B4A5DF009DBFA2 /* ImageViewerController.swift */,
+				AFF27B9D20B4A5DF009DBFA2 /* Info.plist */,
+				AFF27B9B20B4A5DF009DBFA2 /* Utilities.swift */,
+				AFF27B9920B4A5C9009DBFA2 /* Transitions */,
+				AFF27B9820B4A5BE009DBFA2 /* Resources */,
+			);
+			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		AFF27B9820B4A5BE009DBFA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFF27BA520B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets */,
+				AFF27BA620B4A5EA009DBFA2 /* ImageViewerController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFF27B9920B4A5C9009DBFA2 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				AFF27BA920B4A5F6009DBFA2 /* ImageViewerDismissalInteractor.swift */,
+				AFF27BAA20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift */,
+				AFF27BAB20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift */,
+				AFF27BAC20B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift */,
+			);
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +280,10 @@
 			files = (
 				AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */,
 				AFC71D9D20A4BB86007412BD /* mockable1.png in Resources */,
+				AFF27BA220B4A5DF009DBFA2 /* Info.plist in Resources */,
 				AF55964620829EA000621511 /* Picture 56.jpg in Resources */,
+				AFF27BA820B4A5EA009DBFA2 /* ImageViewerController.xib in Resources */,
+				AFF27BA720B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets in Resources */,
 				AFA188702087E0CE001C4527 /* misst.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
 				AF01FBDA2081742000BD65C3 /* players.plist in Resources */,
@@ -244,13 +306,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF27BAF20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift in Sources */,
+				AFF27BA320B4A5DF009DBFA2 /* ImageViewerConfiguration.swift in Sources */,
 				AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */,
 				AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */,
 				AF464483208A66D3003A8966 /* RosterTableViewCell.swift in Sources */,
+				AFF27BAD20B4A5F6009DBFA2 /* ImageViewerDismissalInteractor.swift in Sources */,
 				AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */,
 				AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */,
 				AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */,
+				AFF27BAE20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift in Sources */,
+				AFF27BA120B4A5DF009DBFA2 /* Utilities.swift in Sources */,
 				AF4644882090DB90003A8966 /* FullViewController.swift in Sources */,
+				AFF27BB020B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift in Sources */,
+				AFF27BA020B4A5DF009DBFA2 /* ImageViewerController.swift in Sources */,
+				AFF27BA420B4A5DF009DBFA2 /* AnimatableImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

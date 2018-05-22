@@ -15,6 +15,7 @@ class RosterTableViewController: UITableViewController {
     var items: [PlayerModel] =  {
         return PlayerManager().loadPlayerDataFromPlist()
     }()
+    var currentPlayer = PlayerModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,18 +26,19 @@ class RosterTableViewController: UITableViewController {
         
     }
     func setupSearchBar() {
-        self.searchController.delegate = self
-        self.searchController.searchBar.delegate = self
-        self.searchController.searchResultsUpdater = self
+        searchController.searchBar.backgroundColor = UIColor().hexStringToUIColor(hex:"#163252")
+        searchController.delegate = self
+        searchController.searchBar.delegate = self
+        searchController.searchResultsUpdater = self
         
-        self.searchController.hidesNavigationBarDuringPresentation = false
-        self.searchController.dimsBackgroundDuringPresentation = true
-        self.searchController.obscuresBackgroundDuringPresentation = false
-        self.searchController.searchBar.placeholder = "Search by player name, number, or position"
-        self.searchController.searchBar.sizeToFit()
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = true
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search by player name, number, or position"
+        searchController.searchBar.sizeToFit()
         
-        self.searchController.searchBar.becomeFirstResponder()
-        self.navigationItem.titleView = self.searchController.searchBar
+        searchController.searchBar.becomeFirstResponder()
+        navigationItem.titleView = self.searchController.searchBar
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -64,6 +66,7 @@ class RosterTableViewController: UITableViewController {
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
             
             if !(cell.detailView?.isHidden)! {
+                currentPlayer = items[indexPath.row]
                 tableView.scrollToRow(at: indexPath, at: .top, animated: true)
             }
             tableView.beginUpdates()
@@ -83,7 +86,7 @@ class RosterTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          let vc = segue.destination as! FullViewController
-        vc.player = items[(self.tableView.indexPathForSelectedRow?.row)!]
+         vc.player = currentPlayer
     }
     
 }
@@ -132,4 +135,29 @@ extension UIView {
         self.layer.mask = mask
     }
 }
+
+extension UIColor {
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+}
+
 
