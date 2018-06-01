@@ -4,119 +4,119 @@
 <array>
 	<dict>
 		<key>weight</key>
-		<integer>226</integer>
+		<string>226</string>
 		<key>position</key>
 		<string>QUARTERBACK</string>
 		<key>college</key>
 		<string>ff</string>
 		<key>20 yard shuttle</key>
-		<real>4.32</real>
+		<string>4.32</string>
 		<key>40 yard dash</key>
-		<real>4.79</real>
+		<string>4.79</string>
 		<key>hand size</key>
 		<string>10 7/8</string>
 		<key>summary</key>
 		<string>In Dak Prescott&apos;s second-year as the Cowboys&apos; quarterback, he took a few steps backwards as more of the offense was put on his plate. He struggled when Ezekiel Elliott and/or Tyron Smith was out of the lineup and played like a much different quarterback in the second half of the season. Prescott threw more interceptions and saw his completion percentage dip in 2017. Entering his third season, it will be interesting to see what quarterback emerges; the rookie of the year one from 2016 or the inconsistent version we saw in in 2017? 2018 will be a make-or-break year for Prescott.</string>
 		<key>stat4</key>
-		<integer>22</integer>
+		<string>22</string>
 		<key>stat3</key>
-		<real>6.8</real>
+		<string>6.8</string>
 		<key>2017 grade</key>
 		<string>77/100 - Good NFL Starter</string>
 		<key>name</key>
 		<string>#4 DAK PRESCOTT</string>
 		<key>stat2</key>
-		<integer>3324</integer>
+		<string>3324</string>
 		<key>stat7</key>
-		<real>66.3</real>
+		<string>66.3</string>
 		<key>bench press</key>
 		<string>N/A</string>
 		<key>vertical jump</key>
-		<real>32.5</real>
+		<string>32.5</string>
 		<key>mockdraftchart</key>
 		<string></string>
 		<key>number</key>
 		<string></string>
 		<key>stat1</key>
-		<real>62.9</real>
+		<string>62.9</string>
 		<key>birthdate</key>
 		<string>JULY 29, 1994 (24)</string>
 		<key>stat6</key>
-		<real>86.59999999999999</real>
+		<string>86.6</string>
 		<key>height</key>
 		<string>6&apos;2</string>
 		<key>broad jump</key>
-		<integer>116</integer>
+		<string>116</string>
 		<key>10 yard split</key>
-		<real>1.68</real>
+		<string>1.68</string>
 		<key>stat5</key>
-		<integer>13</integer>
+		<string>13</string>
 		<key>3 cone</key>
-		<real>7.11</real>
+		<string>7.11</string>
 		<key>sparq %</key>
-		<real>0.667</real>
+		<string>0.667</string>
 		<key>film notes</key>
 		<string></string>
 	</dict>
 	<dict>
 		<key>weight</key>
-		<integer>228</integer>
+		<string>228</string>
 		<key>position</key>
 		<string>QUARTERBACK</string>
 		<key>college</key>
 		<string></string>
 		<key>20 yard shuttle</key>
-		<real>4.47</real>
+		<string>4.47</string>
 		<key>40 yard dash</key>
-		<real>4.93</real>
+		<string>4.93</string>
 		<key>hand size</key>
 		<string>9 1/8</string>
 		<key>summary</key>
 		<string>As an undrafted free agent, Cooper Rush not only made the Cowboys&apos; roster, but he beat out Scott Linehan&apos;s favorite player of all-time; Kellen Moore. After a marvelous preseason, Rush became the Cowboys&apos; backup quarterback halfway through the season. Rush lacks the physical tools to ever be a full-time starter, but he is more than capable of being a quality backup in the NFL. Rush&apos;s poise, confidence and accuracy will allow him to stay in the league for many years. He is the ideal backup in today&apos;s NFL that emphasizes the short-passing game.</string>
 		<key>stat4</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>stat3</key>
-		<real>0.7</real>
+		<string>0.7</string>
 		<key>2017 grade</key>
 		<string>37/40 - Below Average Backup</string>
 		<key>name</key>
 		<string>#7 COOPER RUSH</string>
 		<key>stat2</key>
-		<integer>2</integer>
+		<string>2</string>
 		<key>stat7</key>
-		<real>0.9</real>
+		<string>0.9</string>
 		<key>bench press</key>
 		<string>N/A</string>
 		<key>vertical jump</key>
-		<integer>27</integer>
+		<string>27</string>
 		<key>mockdraftchart</key>
 		<string></string>
 		<key>number</key>
 		<string></string>
 		<key>stat1</key>
-		<real>33.3</real>
+		<string>33.3</string>
 		<key>birthdate</key>
 		<string>NOVEMBER 21, 1993 (24)</string>
 		<key>stat6</key>
-		<real>42.4</real>
+		<string>42.4</string>
 		<key>height</key>
 		<string>6&apos;3</string>
 		<key>broad jump</key>
-		<integer>105</integer>
+		<string>105</string>
 		<key>10 yard split</key>
-		<real>1.72</real>
+		<string>1.72</string>
 		<key>stat5</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>3 cone</key>
-		<real>7.23</real>
+		<string>7.23</string>
 		<key>sparq %</key>
-		<real>0.241</real>
+		<string>0.241</string>
 		<key>film notes</key>
 		<string></string>
 	</dict>
 	<dict>
 		<key>weight</key>
-		<integer>225</integer>
+		<string>225</string>
 		<key>position</key>
 		<string>RUNNING BACK</string>
 		<key>college</key>
@@ -124,55 +124,55 @@
 		<key>20 yard shuttle</key>
 		<string>N/A</string>
 		<key>40 yard dash</key>
-		<real>4.46</real>
+		<string>4.46</string>
 		<key>hand size</key>
-		<real>2.27</real>
+		<string>2.27</string>
 		<key>summary</key>
 		<string>Ezekiel Elliott is the perfect three-down back for today&apos;s NFL. Elliott has the speed to break off long runs when given lanes and the power and leg drive to punish defenders in short-yardage situations. He also has the vision and patience to run in any scheme, including man and wide-zone concepts. His career in the NFL might not be for long as he is one of the most violent runners in the league. But as of right now, there is no other player that can match his toughness and physical gifts. He&apos;s the best running back in the league and it is not even close.</string>
 		<key>stat4</key>
-		<integer>7</integer>
+		<string>7</string>
 		<key>stat3</key>
-		<real>4.1</real>
+		<string>4.1</string>
 		<key>2017 grade</key>
 		<string>86/100 - Pro Bowl Caliber</string>
 		<key>name</key>
 		<string>#21 EZEKIEL ELLIOTT</string>
 		<key>stat2</key>
-		<integer>983</integer>
+		<string>983</string>
 		<key>stat7</key>
-		<integer>2</integer>
+		<string>2</string>
 		<key>bench press</key>
-		<integer>23</integer>
+		<string>23</string>
 		<key>vertical jump</key>
-		<integer>34</integer>
+		<string>34</string>
 		<key>mockdraftchart</key>
 		<string></string>
 		<key>number</key>
 		<string></string>
 		<key>stat1</key>
-		<integer>242</integer>
+		<string>242</string>
 		<key>birthdate</key>
 		<string>JULY 22, 1995 (22)</string>
 		<key>stat6</key>
-		<integer>269</integer>
+		<string>269</string>
 		<key>height</key>
 		<string>6&apos;0</string>
 		<key>broad jump</key>
-		<integer>118</integer>
+		<string>118</string>
 		<key>10 yard split</key>
-		<real>1.67</real>
+		<string>1.67</string>
 		<key>stat5</key>
-		<integer>26</integer>
+		<string>26</string>
 		<key>3 cone</key>
-		<real>7.66</real>
+		<string>7.66</string>
 		<key>sparq %</key>
-		<real>0.457</real>
+		<string>0.457</string>
 		<key>film notes</key>
 		<string></string>
 	</dict>
 	<dict>
 		<key>weight</key>
-		<integer>231</integer>
+		<string>231</string>
 		<key>position</key>
 		<string>RUNNING BACK</string>
 		<key>college</key>
@@ -186,17 +186,17 @@
 		<key>summary</key>
 		<string>Rod Smith has had an interesting journey to the NFL so far. After being kicked out of Ohio State and being released by the Seattle Seahawks, Smith found himself on the Cowboys&apos; roster in 2015. In 2016, the Cowboys moved him to fullback and he bounced on and off the roster. But in 2017, Smith found himself back at running back and thrived in the second  half of the season. Smith scored five touchdowns last season as he helped fill in during Ezekiel Elliott&apos;s absence. Smith will likely never be a starter in the NFL, but his ability to run, block and catch make him the ideal backup in today&apos;s NFL.</string>
 		<key>stat4</key>
-		<integer>4</integer>
+		<string>4</string>
 		<key>stat3</key>
-		<real>4.2</real>
+		<string>4.2</string>
 		<key>2017 grade</key>
 		<string>52/100 - Quality Backup</string>
 		<key>name</key>
 		<string>#45 ROD SMITH</string>
 		<key>stat2</key>
-		<integer>232</integer>
+		<string>232</string>
 		<key>stat7</key>
-		<integer>1</integer>
+		<string>1</string>
 		<key>bench press</key>
 		<string>N/A</string>
 		<key>vertical jump</key>
@@ -206,11 +206,11 @@
 		<key>number</key>
 		<string></string>
 		<key>stat1</key>
-		<integer>55</integer>
+		<string>55</string>
 		<key>birthdate</key>
 		<string>JANUARY 10, 1992 (26)</string>
 		<key>stat6</key>
-		<integer>202</integer>
+		<string>202</string>
 		<key>height</key>
 		<string>6&apos;3</string>
 		<key>broad jump</key>
@@ -218,7 +218,7 @@
 		<key>10 yard split</key>
 		<string>N/A</string>
 		<key>stat5</key>
-		<integer>19</integer>
+		<string>19</string>
 		<key>3 cone</key>
 		<string>N/A</string>
 		<key>sparq %</key>

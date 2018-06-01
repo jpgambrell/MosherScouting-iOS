@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF01FBDA2081742000BD65C3 /* players.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF01FBD92081741F00BD65C3 /* players.plist */; };
+		AF01FBDA2081742000BD65C3 /* playersOLD.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF01FBD92081741F00BD65C3 /* playersOLD.plist */; };
 		AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CB2073EA8600402716 /* AppDelegate.swift */; };
 		AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CD2073EA8600402716 /* ViewController.swift */; };
 		AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D22073EA8600402716 /* Assets.xcassets */; };
@@ -18,7 +18,6 @@
 		AF464484208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
 		AF4644882090DB90003A8966 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4644872090DB90003A8966 /* FullViewController.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
-		AF6AFC8620AA126900699F13 /* playersBeforeDraft.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6AFC8520AA126900699F13 /* playersBeforeDraft.plist */; };
 		AFA188702087E0CE001C4527 /* misst.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA1886F2087E0CD001C4527 /* misst.png */; };
 		AFC71D9D20A4BB86007412BD /* mockable1.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC71D9C20A4BB86007412BD /* mockable1.png */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
@@ -36,6 +35,7 @@
 		AFF27BAE20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BAA20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift */; };
 		AFF27BAF20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BAB20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift */; };
 		AFF27BB020B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27BAC20B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift */; };
+		AFF27BB520C1CEDC009DBFA2 /* players.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFF27BB420C1CEDB009DBFA2 /* players.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF01FBD92081741F00BD65C3 /* players.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = players.plist; sourceTree = "<group>"; };
+		AF01FBD92081741F00BD65C3 /* playersOLD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playersOLD.plist; sourceTree = "<group>"; };
 		AF35A6C82073EA8600402716 /* MosherScouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosherScouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35A6CB2073EA8600402716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF35A6CD2073EA8600402716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +61,6 @@
 		AF464482208A66D3003A8966 /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		AF4644872090DB90003A8966 /* FullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
-		AF6AFC8520AA126900699F13 /* playersBeforeDraft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playersBeforeDraft.plist; sourceTree = "<group>"; };
 		AFA1886F2087E0CD001C4527 /* misst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misst.png; sourceTree = "<group>"; };
 		AFC71D9C20A4BB86007412BD /* mockable1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mockable1.png; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		AFF27BAA20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerDismissalTransition.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerDismissalTransition.swift; sourceTree = SOURCE_ROOT; };
 		AFF27BAB20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerPresentationTransition.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerPresentationTransition.swift; sourceTree = SOURCE_ROOT; };
 		AFF27BAC20B4A5F6009DBFA2 /* ImageViewerTransitioningHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerTransitioningHandler.swift; path = MosherScouting/ImageViewerold/Transitions/ImageViewerTransitioningHandler.swift; sourceTree = SOURCE_ROOT; };
+		AFF27BB420C1CEDB009DBFA2 /* players.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = players.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 				AFCA864220866A16007D85EB /* Main.storyboard */,
 				AF35A6D72073EA8600402716 /* Info.plist */,
 				AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */,
-				AF01FBD92081741F00BD65C3 /* players.plist */,
-				AF6AFC8520AA126900699F13 /* playersBeforeDraft.plist */,
+				AF01FBD92081741F00BD65C3 /* playersOLD.plist */,
+				AFF27BB420C1CEDB009DBFA2 /* players.plist */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 				AFC71D9C20A4BB86007412BD /* mockable1.png */,
 				AFA1886F2087E0CD001C4527 /* misst.png */,
@@ -278,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF27BB520C1CEDC009DBFA2 /* players.plist in Resources */,
 				AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */,
 				AFC71D9D20A4BB86007412BD /* mockable1.png in Resources */,
 				AFF27BA220B4A5DF009DBFA2 /* Info.plist in Resources */,
@@ -286,8 +287,7 @@
 				AFF27BA720B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets in Resources */,
 				AFA188702087E0CE001C4527 /* misst.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
-				AF01FBDA2081742000BD65C3 /* players.plist in Resources */,
-				AF6AFC8620AA126900699F13 /* playersBeforeDraft.plist in Resources */,
+				AF01FBDA2081742000BD65C3 /* playersOLD.plist in Resources */,
 				AFCA864320866A16007D85EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
