@@ -13,9 +13,15 @@ class FullViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var birthDate: UILabel!
-    @IBOutlet weak var summaryView: UIView!
+    //@IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var playerLogo: UIImageView!
+    
+    @IBOutlet weak var height: UILabel!
+    
+    @IBOutlet weak var weight: UILabel!
+    
+    
     
     @IBOutlet weak var grade: UILabel!
     @IBOutlet weak var mockchart: UIButton!
@@ -52,7 +58,7 @@ class FullViewController: UIViewController {
     var player = PlayerModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 1032)
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 1200)
         setupProfileData()
     }
 
@@ -67,6 +73,8 @@ class FullViewController: UIViewController {
         name.text = player.name
         birthDate.text = player.birthdate
         grade.text = player.grade
+        height.text = player.height
+        weight.text = player.weight
         
         
         stat1Title.text = positionAttr[0]
