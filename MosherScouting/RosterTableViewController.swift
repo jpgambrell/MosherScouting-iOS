@@ -15,7 +15,7 @@ class RosterTableViewController: UITableViewController {
     var items: [PlayerModel] =  {
         return PlayerManager().loadPlayerDataFromPlist()
     }()
-    var currentPlayer = PlayerModel()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,8 +66,7 @@ class RosterTableViewController: UITableViewController {
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!
             
             if !(cell.detailView?.isHidden)! {
-                currentPlayer = items[indexPath.row]
-                tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+               // tableView.scrollToRow(at: indexPath, at: .top, animated: true)
             }
             tableView.beginUpdates()
             tableView.endUpdates()
@@ -77,17 +76,18 @@ class RosterTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RosterTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath) as! RosterTableViewCell
-       
+         cell.tableVC = self
         
         let viewItems = (filterActive && filteredItems.count > 0) ? filteredItems : self.items
         cell.populateCell(player: viewItems[indexPath.row])
         return cell
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         let vc = segue.destination as! FullViewController
-         vc.player = currentPlayer
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//         let vc = segue.destination as! FullViewController
+//        let currentPlayer = sender as! PlayerModel
+//         vc.player = currentPlayer
+//    }
     
 }
 extension RosterTableViewController: UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {

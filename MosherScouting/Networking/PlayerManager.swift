@@ -112,6 +112,7 @@ class PlayerManager {
         att.append(AttributeTitles(position: "RUNNING BACK", titles: rbAtt ))
         att.append(AttributeTitles(position: "FULLBACK", titles: rbAtt))
         att.append(AttributeTitles(position: "WIDE RECEIVER", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))
+         att.append(AttributeTitles(position: "OFFENSIVE WEAPON", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","TOTAL CARRIES","RUSHING YARDS"]))
          att.append(AttributeTitles(position: "SLOT RECEIVER", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))
         
          att.append(AttributeTitles(position: "TIGHT END", titles:  ["TARGETS", "RECEPTIONS","YARDS","YARDS/RECEPTION","TOUCHDOWNS","YARDS AFTER CATCH","DROPS"]))

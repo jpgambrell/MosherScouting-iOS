@@ -14,6 +14,7 @@ class RosterTableViewCell: UITableViewCell {
             detailView.isHidden = true
         }
     }
+    
     @IBOutlet weak var containerView: UIView!
     
     @IBOutlet weak var name: UILabel!
@@ -27,8 +28,11 @@ class RosterTableViewCell: UITableViewCell {
     @IBOutlet weak var mockchart: UIImageView!
     
     @IBOutlet weak var summary: UITextView!
+    var tableVC = RosterTableViewController()
+    var player = PlayerModel()
     
     func populateCell(player: PlayerModel) {
+        self.player = player
         name.text = player.name
         position.text = player.position
         height.text = player.height
@@ -37,6 +41,16 @@ class RosterTableViewCell: UITableViewCell {
         summary.text = player.summary
         playerImage.image = UIImage(named: player.playerImageName)
         mockchart.image = UIImage(named: player.playerMockImageName)
+    }
+    @IBAction func showFullProfileVC(_ sender: Any) {
+        //UIViewController().performSegue(withIdentifier: "ShowFullProfile", sender: player)
+        let sb: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let fullVC = sb.instantiateViewController(withIdentifier: "FullViewController") as! FullViewController
+        fullVC.player = self.player
+        
+        tableVC.navigationController?.pushViewController(fullVC, animated: true)
+        
     }
     
     
