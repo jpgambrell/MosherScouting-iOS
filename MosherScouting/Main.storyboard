@@ -329,11 +329,11 @@
                         <viewControllerLayoutGuide type="bottom" id="puM-np-lQW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bnM-cB-1yK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-tS-HQ3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1092"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-Fa-GA6">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1222"/>
@@ -893,9 +893,9 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0mK-Fa-GA6" secondAttribute="trailing" id="AkI-wj-wgI"/>
-                                    <constraint firstAttribute="bottom" secondItem="0mK-Fa-GA6" secondAttribute="bottom" constant="-258" id="H7F-VD-0DM"/>
+                                    <constraint firstAttribute="bottom" secondItem="0mK-Fa-GA6" secondAttribute="bottom" id="H7F-VD-0DM"/>
                                     <constraint firstItem="0mK-Fa-GA6" firstAttribute="top" secondItem="jrh-tS-HQ3" secondAttribute="top" id="NI4-ri-PWf"/>
-                                    <constraint firstAttribute="height" priority="990" constant="1092" id="bqb-Ss-yDe"/>
+                                    <constraint firstAttribute="height" priority="990" constant="2000" id="bqb-Ss-yDe"/>
                                     <constraint firstItem="0mK-Fa-GA6" firstAttribute="centerX" secondItem="jrh-tS-HQ3" secondAttribute="centerX" id="d3u-dD-ugT"/>
                                     <constraint firstItem="0mK-Fa-GA6" firstAttribute="leading" secondItem="jrh-tS-HQ3" secondAttribute="leading" id="y6M-Fo-uqi"/>
                                 </constraints>
@@ -910,11 +910,12 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                             <constraint firstItem="jrh-tS-HQ3" firstAttribute="top" secondItem="bnM-cB-1yK" secondAttribute="top" id="zzf-pR-0GY"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="375" height="1092"/>
+                    <size key="freeformSize" width="375" height="1400"/>
                     <connections>
                         <outlet property="benchPress" destination="Oqg-Uw-99t" id="1Dy-tL-PSV"/>
                         <outlet property="birthDate" destination="BNQ-1H-2AV" id="3wL-fM-OLq"/>
                         <outlet property="broJump" destination="n7u-3V-bYl" id="61d-Jh-9JM"/>
+                        <outlet property="filmNotes" destination="XFm-xS-rgA" id="BTt-dg-iK6"/>
                         <outlet property="fortyDash" destination="kPq-pe-8eE" id="QiF-0a-KA5"/>
                         <outlet property="grade" destination="7VO-LH-sAn" id="wzd-iM-qv6"/>
                         <outlet property="handSize" destination="Cre-Nj-Lrs" id="WL1-xW-ugp"/>

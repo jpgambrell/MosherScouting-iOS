@@ -77,7 +77,7 @@ class RosterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> RosterTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RosterCell", for: indexPath) as! RosterTableViewCell
          cell.tableVC = self
-        
+         cell.detailView.isHidden = true
         let viewItems = (filterActive && filteredItems.count > 0) ? filteredItems : self.items
         cell.populateCell(player: viewItems[indexPath.row])
         return cell

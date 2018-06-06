@@ -55,10 +55,11 @@ class FullViewController: UIViewController {
     @IBOutlet weak var twentyShuttle: UILabel!
     @IBOutlet weak var sparQ: UILabel!
     
+    @IBOutlet weak var filmNotes: UITextView!
     var player = PlayerModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 1200)
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 2000)
         setupProfileData()
     }
 
@@ -103,6 +104,7 @@ class FullViewController: UIViewController {
         threeCode.text = player.threeCone
         twentyShuttle.text = player.twentyYdShuttle
         sparQ.text = player.sparq
+        filmNotes.text = player.filmNotes
         
         playerImage.image = UIImage(named: player.playerImageName)
         
