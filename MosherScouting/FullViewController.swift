@@ -106,11 +106,11 @@ class FullViewController: UIViewController {
         sparQ.text = player.sparq
         filmNotes.text = player.filmNotes
         
-        playerImage.image = UIImage(named: player.playerImageName)
+        playerImage.image = UIImage(named: player.playerImageName) ?? UIImage(named: "noimage")
         
-        mockchart.setImage(UIImage(named: player.playerMockImageName), for: .normal)
+        mockchart.setImage(UIImage(named: player.playerMockImageName) ?? UIImage(named: "noimage"), for: .normal)
         
-        playerLogo.image = UIImage(named: player.playerLogoImageName)
+        playerLogo.image = UIImage(named: player.playerLogoImageName) ?? UIImage(named: "noimage")
         
         
     }

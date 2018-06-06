@@ -39,8 +39,8 @@ class RosterTableViewCell: UITableViewCell {
         weight.text = player.weight
         grade.text = player.grade
         summary.text = player.summary
-        playerImage.image = UIImage(named: player.playerImageName)
-        mockchart.image = UIImage(named: player.playerMockImageName)
+        playerImage.image = UIImage(named: player.playerImageName) ?? UIImage(named: "noimage")
+        mockchart.image = UIImage(named: player.playerMockImageName) ?? UIImage(named: "noimage")
     }
     @IBAction func showFullProfileVC(_ sender: Any) {
         //UIViewController().performSegue(withIdentifier: "ShowFullProfile", sender: player)
