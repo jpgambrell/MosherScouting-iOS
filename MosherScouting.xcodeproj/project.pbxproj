@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01DC23F920C89EB0005FDA90 /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 01DC23F820C89EB0005FDA90 /* noimage.png */; };
 		AF01FBDA2081742000BD65C3 /* playersOLD.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF01FBD92081741F00BD65C3 /* playersOLD.plist */; };
 		AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CB2073EA8600402716 /* AppDelegate.swift */; };
 		AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CD2073EA8600402716 /* ViewController.swift */; };
@@ -50,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DC23F820C89EB0005FDA90 /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage.png; sourceTree = "<group>"; };
 		AF01FBD92081741F00BD65C3 /* playersOLD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playersOLD.plist; sourceTree = "<group>"; };
 		AF35A6C82073EA8600402716 /* MosherScouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosherScouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35A6CB2073EA8600402716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		AF35A6CA2073EA8600402716 /* MosherScouting */ = {
 			isa = PBXGroup;
 			children = (
-				01DC23F820C89EB0005FDA90 /* noimage.png */,
 				AFF27B9720B4A5AB009DBFA2 /* ImageViewer */,
 				AFCA86542086866B007D85EB /* Networking */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
@@ -283,7 +280,6 @@
 			files = (
 				AFF27BB520C1CEDC009DBFA2 /* players.plist in Resources */,
 				AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */,
-				01DC23F920C89EB0005FDA90 /* noimage.png in Resources */,
 				AFC71D9D20A4BB86007412BD /* mockable1.png in Resources */,
 				AFF27BA220B4A5DF009DBFA2 /* Info.plist in Resources */,
 				AF55964620829EA000621511 /* Picture 56.jpg in Resources */,

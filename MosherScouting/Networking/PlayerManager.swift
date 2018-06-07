@@ -43,6 +43,7 @@ struct PlayerModel {
     var playerImageName : String = ""
     var playerMockImageName : String = ""
     var playerLogoImageName : String = ""
+    var searchHash : String = ""
     
     func populatePlayer(item : Dictionary<String, String>) -> PlayerModel {
         var p = PlayerModel()
@@ -75,6 +76,8 @@ struct PlayerModel {
         p.playerImageName = getPlayerImageName(name: p.name)
         p.playerMockImageName = getPlayerMockImageName(name: p.name)
         p.playerLogoImageName = getPlayerLogoImageName(name: p.name)
+        
+        p.searchHash = "\(p.name)\(p.position)"
         return p
     }
     func getPlayerNameForImages (name: String) -> String {

@@ -19,6 +19,7 @@ class RosterTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        definesPresentationContext = true
         setupSearchBar()
         
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -98,7 +99,7 @@ extension RosterTableViewController: UISearchControllerDelegate, UISearchBarDele
         print("searchString: \(searchString)")
         if !(searchString == "") {
             filteredItems = items.filter({ (item) -> Bool in
-                let name = item.name
+                let name = item.searchHash
                 return name.lowercased().range(of:searchString.lowercased()) != nil ? true : false
             })
             self.tableView.reloadData()
@@ -133,6 +134,11 @@ extension UIView {
         let mask = CAShapeLayer()
         mask.path = path.cgPath
         self.layer.mask = mask
+    }
+    
+    func makeCircular() {
+        self.layer.cornerRadius = min(self.frame.size.height, self.frame.size.width) / 2.0
+        self.clipsToBounds = true
     }
 }
 

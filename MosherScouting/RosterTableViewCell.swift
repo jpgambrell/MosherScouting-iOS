@@ -17,6 +17,7 @@ class RosterTableViewCell: UITableViewCell {
     
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var mockChart: UIButton!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var position: UILabel!
     @IBOutlet weak var height: UILabel!
@@ -25,12 +26,16 @@ class RosterTableViewCell: UITableViewCell {
     @IBOutlet weak var playerImage: UIImageView!
     
     @IBOutlet weak var grade: UILabel!
-    @IBOutlet weak var mockchart: UIImageView!
+    
     
     @IBOutlet weak var summary: UITextView!
     var tableVC = RosterTableViewController()
     var player = PlayerModel()
     
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        playerImage.make
+//    }
     func populateCell(player: PlayerModel) {
         self.player = player
         name.text = player.name
@@ -40,7 +45,8 @@ class RosterTableViewCell: UITableViewCell {
         grade.text = player.grade
         summary.text = player.summary
         playerImage.image = UIImage(named: player.playerImageName) ?? UIImage(named: "noimage")
-        mockchart.image = UIImage(named: player.playerMockImageName) ?? UIImage(named: "noimage")
+        
+        mockChart.setImage(UIImage(named: player.playerMockImageName) ?? UIImage(named: "noimage"), for: .normal)
     }
     @IBAction func showFullProfileVC(_ sender: Any) {
         //UIViewController().performSegue(withIdentifier: "ShowFullProfile", sender: player)
@@ -54,6 +60,13 @@ class RosterTableViewCell: UITableViewCell {
     }
     
     
+    @IBAction func mockImageClick(_ sender: Any) {
+        let configuration = ImageViewerConfiguration { config in
+            config.imageView = mockChart.imageView
+        }
+        
+        tableVC.present(ImageViewerController(configuration: configuration), animated: true)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
