@@ -106,14 +106,7 @@ class PlayerManager {
         return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String]
     }()
     
-    var isVerified : Bool = {
-        let keychain = KeychainSwift()
-        if let code = keychain.get("code"){
-            return (!(code.isEmpty)) ? true : false
-        } else {
-            return false
-        }
-    }()
+    
     
     var statTitles: [AttributeTitles] = {
         var att = [AttributeTitles]()
@@ -160,20 +153,34 @@ class PlayerManager {
         att.append(AttributeTitles(position: "LONG SNAPPER", titles:  ["TACKLES", "TOTAL SNAPS", "CAREER TACKLES", "FUMBLE RECOVERIES","PRO BOWLS","GAMES PLAYED","YEARS PLAYED"]))
         return att
     }()
-
+    
+    
+    func isVerified() -> Bool {
+        let keychain = KeychainSwift()
+        if let code = keychain.get("code"){
+            return code.isEmpty ? false : true
+        } else {
+            return false
+        }
+    }
 
 func loadPlayerDataFromPlist() -> [PlayerModel] {
+    
     var players = [PlayerModel]()
     
-    if !isVerified {
+    var currentPlayerItems :[Dictionary<String, String>] = []
+    
+    if !isVerified() {
         var i:[Dictionary<String, String>] = []
         for index in 0...3 {
             i.append(items[index])
         }
-        
-        items = i
+        currentPlayerItems = i
     }
-    for item in items {
+    else {
+        currentPlayerItems = items
+    }
+    for item in currentPlayerItems {
         players.append(PlayerModel().populatePlayer(item: item))
         print(item["name"] ?? "")
     }

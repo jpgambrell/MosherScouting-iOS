@@ -76,7 +76,7 @@ class FullViewController: UIViewController {
     func setupProfileData(){
         let positionAttr = PlayerManager().getTitlesBy(position: player.position)
         self.title = player.name
-        name.text = player.name
+        
         birthDate.text = player.birthdate
         grade.text = player.grade
         height.text = player.height

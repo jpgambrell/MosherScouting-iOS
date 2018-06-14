@@ -16,6 +16,7 @@
 		AF4644882090DB90003A8966 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4644872090DB90003A8966 /* FullViewController.swift */; };
 		AF55964620829EA000621511 /* Picture 56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF55964520829EA000621511 /* Picture 56.jpg */; };
 		AFA188702087E0CE001C4527 /* misst.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA1886F2087E0CD001C4527 /* misst.png */; };
+		AFB1EDA120D2F7AE00146B96 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB1EDA020D2F7AE00146B96 /* icon.png */; };
 		AFC71D9D20A4BB86007412BD /* mockable1.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC71D9C20A4BB86007412BD /* mockable1.png */; };
 		AFCA864320866A16007D85EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA864220866A16007D85EB /* Main.storyboard */; };
 		AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA864C20868658007D85EB /* PlayerManagerTests.swift */; };
@@ -60,6 +61,7 @@
 		AF4644872090DB90003A8966 /* FullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		AF55964520829EA000621511 /* Picture 56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 56.jpg"; sourceTree = "<group>"; };
 		AFA1886F2087E0CD001C4527 /* misst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misst.png; sourceTree = "<group>"; };
+		AFB1EDA020D2F7AE00146B96 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AFC71D9C20A4BB86007412BD /* mockable1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mockable1.png; sourceTree = "<group>"; };
 		AFCA864220866A16007D85EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AFCA864A20868658007D85EB /* MosherScoutingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosherScoutingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				AF35A6D72073EA8600402716 /* Info.plist */,
 				AFD49B1C20D1A66E0082497F /* codes.plist */,
 				AFF27BB420C1CEDB009DBFA2 /* players.plist */,
+				AFB1EDA020D2F7AE00146B96 /* icon.png */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 				AFC71D9C20A4BB86007412BD /* mockable1.png */,
 				AFA1886F2087E0CD001C4527 /* misst.png */,
@@ -289,6 +292,7 @@
 				AFF27BA820B4A5EA009DBFA2 /* ImageViewerController.xib in Resources */,
 				AFF27BA720B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets in Resources */,
 				AFA188702087E0CE001C4527 /* misst.png in Resources */,
+				AFB1EDA120D2F7AE00146B96 /* icon.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
 				AFCA864320866A16007D85EB /* Main.storyboard in Resources */,
 				AFD49B1D20D1A66F0082497F /* codes.plist in Resources */,

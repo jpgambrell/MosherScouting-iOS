@@ -30,12 +30,11 @@ class RosterTableViewController: UITableViewController {
     }
     
     func setupUI() {
-        self
         
         items = playerManager.loadPlayerDataFromPlist()
 
-        if playerManager.isVerified {
-             unlockButton.isEnabled = false
+        if playerManager.isVerified() {
+             self.navigationItem.rightBarButtonItem = nil
         } else {
               showCodeAlert()
         }
@@ -74,16 +73,15 @@ class RosterTableViewController: UITableViewController {
         }
         let confirmAction = UIAlertAction(title: "Unlock", style: .default) { [weak alertController] _ in
             guard let alertController = alertController, let textField = alertController.textFields?.first else { return }
-            print("Current password \(String(describing: textField.text))")
-            //////
-            
-            if let code = textField.text {
+           
+            if let code = textField.text?.uppercased() {
                 
                 if (self.redeemCode(code: code)) {
                     let keychain = KeychainSwift()
-                    keychain.set(textField.text!, forKey: "code")
+                    keychain.set(code, forKey: "code")
                     self.items = self.playerManager.loadPlayerDataFromPlist()
                     self.tableView.reloadData()
+                    self.navigationItem.rightBarButtonItem = nil
                     self.showCodeConfirmAlert()
                 }
                 else {
@@ -116,7 +114,7 @@ class RosterTableViewController: UITableViewController {
         let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
       
         alert.addAction(okAction)
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion : nil)
     }
     
     func redeemCode(code: String) -> Bool {
