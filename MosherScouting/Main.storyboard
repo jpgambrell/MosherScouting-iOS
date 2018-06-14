@@ -317,7 +317,17 @@
                             <outlet property="delegate" destination="KwN-Sx-vZd" id="MZ0-lk-R7g"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="aXL-du-cSP"/>
+                    <navigationItem key="navigationItem" id="aXL-du-cSP">
+                        <barButtonItem key="rightBarButtonItem" image="unlocked-padlock" id="BH8-Ax-T6v">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="infoButtonClick:" destination="KwN-Sx-vZd" id="9ho-Tc-fhk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="unlockButton" destination="BH8-Ax-T6v" id="Zx5-oc-1vw"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9J-9K-k4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -958,5 +968,6 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
     <resources>
         <image name="10RYANSWITZER-mock" width="246" height="205"/>
         <image name="Picture 56.jpg" width="478" height="300"/>
+        <image name="unlocked-padlock" width="21" height="21"/>
     </resources>
 </document>

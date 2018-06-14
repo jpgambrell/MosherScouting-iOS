@@ -61,6 +61,10 @@ class FullViewController: UIViewController {
         super.viewDidLoad()
         definesPresentationContext = true
         scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 2000)
+        //self.navigationController?.navigationBar.backgroundColor = UIColor().hexStringToUIColor(hex:"#163252")
+        self.navigationController?.navigationBar.barTintColor = UIColor().hexStringToUIColor(hex:"#163252")
+         self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         setupProfileData()
     }
 
@@ -71,7 +75,7 @@ class FullViewController: UIViewController {
     
     func setupProfileData(){
         let positionAttr = PlayerManager().getTitlesBy(position: player.position)
-        
+        self.title = player.name
         name.text = player.name
         birthDate.text = player.birthdate
         grade.text = player.grade

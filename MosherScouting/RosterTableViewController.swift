@@ -10,22 +10,37 @@ import UIKit
 
 class RosterTableViewController: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil)
+    let playerManager = PlayerManager()
+    
     var filteredItems = [PlayerModel]()
     var filterActive: Bool = false
-    var items: [PlayerModel] =  {
-        return PlayerManager().loadPlayerDataFromPlist()
-    }()
+    var items: [PlayerModel] = []
    
+    @IBOutlet weak var unlockButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         definesPresentationContext = true
+        setupUI()
         setupSearchBar()
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
         
     }
+    
+    func setupUI() {
+        self
+        
+        items = playerManager.loadPlayerDataFromPlist()
+
+        if playerManager.isVerified {
+             unlockButton.isEnabled = false
+        } else {
+              showCodeAlert()
+        }
+    }
+    
     func setupSearchBar() {
         searchController.searchBar.backgroundColor = UIColor().hexStringToUIColor(hex:"#163252")
         searchController.delegate = self
@@ -48,6 +63,69 @@ class RosterTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     
+    @IBAction func infoButtonClick(_ sender: Any) {
+        showCodeAlert()
+    }
+    
+    func showCodeAlert() {
+        let alertController = UIAlertController(title: "Redeem Code", message: "Enter the code emailed to you to unlock the full Roster.", preferredStyle: .alert)
+        alertController.addTextField { textField in
+            textField.placeholder = "Code"
+        }
+        let confirmAction = UIAlertAction(title: "Unlock", style: .default) { [weak alertController] _ in
+            guard let alertController = alertController, let textField = alertController.textFields?.first else { return }
+            print("Current password \(String(describing: textField.text))")
+            //////
+            
+            if let code = textField.text {
+                
+                if (self.redeemCode(code: code)) {
+                    let keychain = KeychainSwift()
+                    keychain.set(textField.text!, forKey: "code")
+                    self.items = self.playerManager.loadPlayerDataFromPlist()
+                    self.tableView.reloadData()
+                    self.showCodeConfirmAlert()
+                }
+                else {
+                    self.showErrorAlert()
+                }
+            }
+            /////
+            
+            //compare the current password and do action here
+        }
+        alertController.addAction(confirmAction)
+        let cancelAction = UIAlertAction(title: "Continue Free Trial", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    func showErrorAlert(){
+        let alert = UIAlertController(title: "Unable To Redeem Code", message: "Unable to verify code.  Please check the code and try again.", preferredStyle: .alert)
+      
+        let okAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
+            self.showCodeAlert()
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showCodeConfirmAlert () {
+        let alert = UIAlertController(title: "Code Redeemed", message: "You now have access to the full Roster.", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+      
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func redeemCode(code: String) -> Bool {
+        return PlayerManager().codes.contains(code) ? true : false
+       
+    }
+    
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -62,6 +140,7 @@ class RosterTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         if let cell = tableView.cellForRow(at: indexPath) as? RosterTableViewCell {
            
             cell.detailView?.isHidden = !(cell.detailView?.isHidden)!

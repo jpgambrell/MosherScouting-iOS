@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF01FBDA2081742000BD65C3 /* playersOLD.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF01FBD92081741F00BD65C3 /* playersOLD.plist */; };
 		AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CB2073EA8600402716 /* AppDelegate.swift */; };
-		AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6CD2073EA8600402716 /* ViewController.swift */; };
 		AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D22073EA8600402716 /* Assets.xcassets */; };
 		AF35A6D62073EA8600402716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */; };
-		AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */; };
 		AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46447F208A632E003A8966 /* RosterTableViewController.swift */; };
 		AF464483208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
 		AF464484208A66D3003A8966 /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464482208A66D3003A8966 /* RosterTableViewCell.swift */; };
@@ -24,6 +21,10 @@
 		AFCA864D20868658007D85EB /* PlayerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA864C20868658007D85EB /* PlayerManagerTests.swift */; };
 		AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
 		AFCA8657208686B7007D85EB /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA8655208686B7007D85EB /* PlayerManager.swift */; };
+		AFD49B1720D19BEE0082497F /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD49B1620D19BEE0082497F /* KeychainSwift.swift */; };
+		AFD49B1A20D19C690082497F /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD49B1820D19C690082497F /* KeychainSwiftAccessOptions.swift */; };
+		AFD49B1B20D19C690082497F /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD49B1920D19C690082497F /* TegKeychainConstants.swift */; };
+		AFD49B1D20D1A66F0082497F /* codes.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFD49B1C20D1A66E0082497F /* codes.plist */; };
 		AFF27BA020B4A5DF009DBFA2 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27B9A20B4A5DF009DBFA2 /* ImageViewerController.swift */; };
 		AFF27BA120B4A5DF009DBFA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF27B9B20B4A5DF009DBFA2 /* Utilities.swift */; };
 		AFF27BA220B4A5DF009DBFA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFF27B9D20B4A5DF009DBFA2 /* Info.plist */; };
@@ -49,14 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF01FBD92081741F00BD65C3 /* playersOLD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playersOLD.plist; sourceTree = "<group>"; };
 		AF35A6C82073EA8600402716 /* MosherScouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosherScouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35A6CB2073EA8600402716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF35A6CD2073EA8600402716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF35A6D22073EA8600402716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF35A6D52073EA8600402716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35A6D72073EA8600402716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF46447F208A632E003A8966 /* RosterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewController.swift; sourceTree = "<group>"; };
 		AF464482208A66D3003A8966 /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
 		AF4644872090DB90003A8966 /* FullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +66,10 @@
 		AFCA864C20868658007D85EB /* PlayerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManagerTests.swift; sourceTree = "<group>"; };
 		AFCA864E20868658007D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCA8655208686B7007D85EB /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		AFD49B1620D19BEE0082497F /* KeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwift.swift; sourceTree = "<group>"; };
+		AFD49B1820D19C690082497F /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		AFD49B1920D19C690082497F /* TegKeychainConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegKeychainConstants.swift; sourceTree = "<group>"; };
+		AFD49B1C20D1A66E0082497F /* codes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = codes.plist; sourceTree = "<group>"; };
 		AFF27B9A20B4A5DF009DBFA2 /* ImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewerController.swift; path = MosherScouting/ImageViewerold/ImageViewerController.swift; sourceTree = SOURCE_ROOT; };
 		AFF27B9B20B4A5DF009DBFA2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = MosherScouting/ImageViewerold/Utilities.swift; sourceTree = SOURCE_ROOT; };
 		AFF27B9C20B4A5DF009DBFA2 /* ImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewer.h; path = MosherScouting/ImageViewerold/ImageViewer.h; sourceTree = SOURCE_ROOT; };
@@ -125,7 +127,6 @@
 				AFF27B9720B4A5AB009DBFA2 /* ImageViewer */,
 				AFCA86542086866B007D85EB /* Networking */,
 				AF35A6CB2073EA8600402716 /* AppDelegate.swift */,
-				AF35A6CD2073EA8600402716 /* ViewController.swift */,
 				AF46447F208A632E003A8966 /* RosterTableViewController.swift */,
 				AF464482208A66D3003A8966 /* RosterTableViewCell.swift */,
 				AF4644872090DB90003A8966 /* FullViewController.swift */,
@@ -133,8 +134,7 @@
 				AF35A6D42073EA8600402716 /* LaunchScreen.storyboard */,
 				AFCA864220866A16007D85EB /* Main.storyboard */,
 				AF35A6D72073EA8600402716 /* Info.plist */,
-				AF35A6DD2073EC0A00402716 /* PlayerCollectionViewCell.swift */,
-				AF01FBD92081741F00BD65C3 /* playersOLD.plist */,
+				AFD49B1C20D1A66E0082497F /* codes.plist */,
 				AFF27BB420C1CEDB009DBFA2 /* players.plist */,
 				AF55964520829EA000621511 /* Picture 56.jpg */,
 				AFC71D9C20A4BB86007412BD /* mockable1.png */,
@@ -156,6 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				AFCA8655208686B7007D85EB /* PlayerManager.swift */,
+				AFD49B1620D19BEE0082497F /* KeychainSwift.swift */,
+				AFD49B1820D19C690082497F /* KeychainSwiftAccessOptions.swift */,
+				AFD49B1920D19C690082497F /* TegKeychainConstants.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -287,8 +290,8 @@
 				AFF27BA720B4A5EA009DBFA2 /* ImageViewer-Assets.xcassets in Resources */,
 				AFA188702087E0CE001C4527 /* misst.png in Resources */,
 				AF35A6D32073EA8600402716 /* Assets.xcassets in Resources */,
-				AF01FBDA2081742000BD65C3 /* playersOLD.plist in Resources */,
 				AFCA864320866A16007D85EB /* Main.storyboard in Resources */,
+				AFD49B1D20D1A66F0082497F /* codes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,13 +311,14 @@
 			files = (
 				AFF27BAF20B4A5F6009DBFA2 /* ImageViewerPresentationTransition.swift in Sources */,
 				AFF27BA320B4A5DF009DBFA2 /* ImageViewerConfiguration.swift in Sources */,
-				AF35A6CE2073EA8600402716 /* ViewController.swift in Sources */,
 				AF35A6CC2073EA8600402716 /* AppDelegate.swift in Sources */,
 				AF464483208A66D3003A8966 /* RosterTableViewCell.swift in Sources */,
 				AFF27BAD20B4A5F6009DBFA2 /* ImageViewerDismissalInteractor.swift in Sources */,
 				AF464480208A632E003A8966 /* RosterTableViewController.swift in Sources */,
+				AFD49B1720D19BEE0082497F /* KeychainSwift.swift in Sources */,
+				AFD49B1B20D19C690082497F /* TegKeychainConstants.swift in Sources */,
 				AFCA8656208686B7007D85EB /* PlayerManager.swift in Sources */,
-				AF35A6DE2073EC0A00402716 /* PlayerCollectionViewCell.swift in Sources */,
+				AFD49B1A20D19C690082497F /* KeychainSwiftAccessOptions.swift in Sources */,
 				AFF27BAE20B4A5F6009DBFA2 /* ImageViewerDismissalTransition.swift in Sources */,
 				AFF27BA120B4A5DF009DBFA2 /* Utilities.swift in Sources */,
 				AF4644882090DB90003A8966 /* FullViewController.swift in Sources */,

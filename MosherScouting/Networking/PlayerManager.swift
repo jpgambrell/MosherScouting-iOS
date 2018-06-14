@@ -101,6 +101,20 @@ class PlayerManager {
         return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [Dictionary<String, String>]
     }()
     
+    var codes: [String] = {
+        let data = try! Data(contentsOf: Bundle.main.url(forResource: "codes", withExtension: "plist")!)
+        return try! PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String]
+    }()
+    
+    var isVerified : Bool = {
+        let keychain = KeychainSwift()
+        if let code = keychain.get("code"){
+            return (!(code.isEmpty)) ? true : false
+        } else {
+            return false
+        }
+    }()
+    
     var statTitles: [AttributeTitles] = {
         var att = [AttributeTitles]()
         let rbAtt = ["TOTAL CARRIES", "RUSHING YARDS","YARDS/CARRY","RUSH TOUCHDOWNS","RECEPTIONS","REC YARDS","REC TDs"]
@@ -150,6 +164,15 @@ class PlayerManager {
 
 func loadPlayerDataFromPlist() -> [PlayerModel] {
     var players = [PlayerModel]()
+    
+    if !isVerified {
+        var i:[Dictionary<String, String>] = []
+        for index in 0...3 {
+            i.append(items[index])
+        }
+        
+        items = i
+    }
     for item in items {
         players.append(PlayerModel().populatePlayer(item: item))
         print(item["name"] ?? "")
