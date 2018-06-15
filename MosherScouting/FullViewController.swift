@@ -11,7 +11,6 @@ import UIKit
 
 class FullViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var birthDate: UILabel!
     //@IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var playerImage: UIImageView!
@@ -21,6 +20,7 @@ class FullViewController: UIViewController {
     
     @IBOutlet weak var weight: UILabel!
     
+    @IBOutlet weak var position: UILabel!
     
     
     @IBOutlet weak var grade: UILabel!
@@ -76,7 +76,7 @@ class FullViewController: UIViewController {
     func setupProfileData(){
         let positionAttr = PlayerManager().getTitlesBy(position: player.position)
         self.title = player.name
-        
+        position.text = player.position
         birthDate.text = player.birthdate
         grade.text = player.grade
         height.text = player.height

@@ -49,7 +49,7 @@ class RosterTableViewCell: UITableViewCell {
         mockChart.setImage(UIImage(named: player.playerMockImageName) ?? UIImage(named: "noimage"), for: .normal)
     }
     @IBAction func showFullProfileVC(_ sender: Any) {
-        //UIViewController().performSegue(withIdentifier: "ShowFullProfile", sender: player)
+  
         let sb: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let fullVC = sb.instantiateViewController(withIdentifier: "FullViewController") as! FullViewController

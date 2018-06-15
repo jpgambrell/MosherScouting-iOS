@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SafariServices
 
-class RosterTableViewController: UITableViewController {
+class RosterTableViewController: UITableViewController, SFSafariViewControllerDelegate {
     let searchController = UISearchController(searchResultsController: nil)
     let playerManager = PlayerManager()
     
@@ -49,7 +50,7 @@ class RosterTableViewController: UITableViewController {
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.dimsBackgroundDuringPresentation = true
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search by player name, number, or position"
+        searchController.searchBar.placeholder = "Name, Number, or Position"
         searchController.searchBar.sizeToFit()
         
         searchController.searchBar.becomeFirstResponder()
@@ -93,6 +94,19 @@ class RosterTableViewController: UITableViewController {
             //compare the current password and do action here
         }
         alertController.addAction(confirmAction)
+        
+        let buyAction = UIAlertAction(title: "Purchase Code with Guide", style: .default) { (alert) in
+            let urlString = "http://www.cowboysrosterguide.com/downloads/dallas-cowboys-roster-guide/"
+            
+            if let url = URL(string: urlString) {
+                let vc = SFSafariViewController(url: url, entersReaderIfAvailable: false)
+                vc.delegate = self
+                
+                self.present(vc, animated: true)
+            }
+        }
+        alertController.addAction(buyAction)
+
         let cancelAction = UIAlertAction(title: "Continue Free Trial", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
@@ -201,6 +215,10 @@ extension RosterTableViewController: UISearchControllerDelegate, UISearchBarDele
             self.tableView.reloadData()
         }
         searchController.searchBar.resignFirstResponder()
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        dismiss(animated: true)
     }
 }
 

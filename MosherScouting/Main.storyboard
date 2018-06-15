@@ -927,6 +927,7 @@ CONFIDENT. BELIEVES HE IS THE BEST PLAYER ON THE FIELD.
                         <outlet property="mockchart" destination="xNe-hH-Nhm" id="rGj-qb-caz"/>
                         <outlet property="playerImage" destination="o9j-hu-svC" id="D4v-Pc-9MN"/>
                         <outlet property="playerLogo" destination="gmP-t8-oT3" id="p3L-ri-ADK"/>
+                        <outlet property="position" destination="Abd-7q-ujo" id="Ml4-Ks-p4h"/>
                         <outlet property="scrollView" destination="jrh-tS-HQ3" id="IRr-nd-WE0"/>
                         <outlet property="sparQ" destination="SVl-SY-utX" id="koU-yl-XOj"/>
                         <outlet property="stat1Title" destination="tjm-CH-N5X" id="IrO-lg-ONc"/>
